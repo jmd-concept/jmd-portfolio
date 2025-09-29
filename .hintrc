@@ -19,7 +19,8 @@
     "axe/text-alternatives": [
       "default",
       {
-        "image-alt": "off"
+        "image-alt": "off",
+        "frame-title": "off"
       }
     ],
     "compat-api/css": [
@@ -28,6 +29,15 @@
         "ignore": [
           "backdrop-filter",
           "-ms-filter"
+        ]
+      }
+    ],
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "iframe[loading]",
+          "iframe[referrerpolicy=no-referrer-when-downgrade]"
         ]
       }
     ]

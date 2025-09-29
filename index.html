@@ -5,14 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jmd-concept</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="description"
+        content="Ce site web est la présentation de jmd-concept pour être connu partout dans le monde le monde" />
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" sizes="12x12" href="#">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/photos/logo mds.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./assets/font-awesome-4.7/css/font-awesome.min.css">
 </head>
 
 <body id="en-tete">
 
-    <div class="bloc">
+    <!-- l'image 'Préchargement de la page -->
+    <div id="prechargement">
+        <img src="./assets/photos/loading.gif" alt="Chargement..." class="image-prechargement">
+    </div>
+
+    <div class="home-bloc">
         <!-- Menu -->
         <header>
             <nav class="navbar">
@@ -21,30 +31,50 @@
                     <img src="./assets/photos/logo-jmd.png" alt="Logo jmd-concept" class="logo">
                 </a>
 
-                <div class="nav-links">
-                    <ul id="navLinks">
-                        <li class="active"><a href="#en-tete">Accueil</a></li>
-                        <li><a href="#about">A propos</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#service">Service</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+                <ul class="nav-list">
+                    <li class="active">
+                        <a href="#en-tete">
+                            <i class="fa fa-home" style="font-size: 1.8em;"></i>
+                        </a>
+                    </li>
+                    <li><a href="#about">A propos</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
 
-                <div class="menu"><i id="menu" class="fa fa-reorder"
-                        style="font-size: 2em; color: rgb(245, 243, 243);"></i></div>
+                    <li class="lien-media">
+                        <a href="https://www.facebook.com/profile.php?id=61581381020725">
+                            <i class="fa fa-facebook" style="color: white;"></i>
+                        </a>
+                        <a href="https://wa.me/243824499881">
+                            <i class="fa fa-whatsapp" style="color: white;"></i>
+                        </a>
+                        <a href="https://www.instagram.com/invites/contact/?igsh=1ov6g05h5lnxk&utm_content=zjmjfv7">
+                            <i class="fa fa-instagram" style=" color: white;"></i>
+                        </a>
+                        <a href="mailto:jmdconcept3@gmail.com">
+                            <i class="fa fa-envelope-o" style="color: white;"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="menu">
+                    <i id="menu" class="fa fa-reorder" style="font-size: 2em; color: rgb(245, 243, 243);"></i>
+                </div>
             </nav>
         </header>
 
         <!--Section Accueil-->
         <section id="home">
             <div class="intro">
-                <p>
-                    <span>JMD Concept </span> JMD-CONCEPT est une structure, qui est animée par la passion et l’ambition
-                    de répondre aux besoins technologiques modernes en communication, publicité et accompagnement
-                    Stratégique dnas le développement logiciel. Malgré notre jeunesse, nous nous positionnons avec une vision claire : offrir des
-                    solutions créatives, innovantes et accessibles aux entreprises, aux particuliers et aux
+                 <p>
+                    <span>JMD Concept,</span><br /> Est une structure, qui est animée par l’ambition de répondre 
+                    aux besoins technologiques modernes en communication, publicité et accompagnement
+                    Stratégique dnas le développement logiciel. nous nous positionnons avec une vision claire : 
+                    offrir des solutions créatives, innovantes et accessibles aux entreprises, aux particuliers et aux
                     Organisations qui souhaitent accroître leur visibilité et valoriser leur image.
+                    <br/>
+                    <span>JMD, La créativité digitale sans limite</span>
                 </p>
                 <div class="bloc-btn">
                     <a href="#contact" class="btn">
@@ -59,16 +89,14 @@
 
     <!--Section À propos-->
     <section id="about">
-        <h2>À propos de nous</h2> <br>
-        <div class="about-bloc">
-            <div>
+        <h2>À propos de jmd-concept</h2> <br>
 
-            </div>
+        <div class="about-bloc">
             <div>
                 <h3>Qui somme nous ?</h3>
                 <p>
                     JMD Concept est une jeune agence innovante spécialisée dans la
-                    création digitale, le développement web, IA et la gestion de données.
+                    création digitale, le développement web, l' IA et la gestion de données.
                     Notre mission est d’accompagner particuliers, entreprises et organisations dans leur transformation
                     numérique à travers des solutions modernes, efficaces et accessibles.
                     <br><br>
@@ -94,8 +122,9 @@
             </div>
             <div class="download">
                 <a
-                    href="/assets/Présentation Entreprise Professionnelle et Moderne Jaune et Noir_20250919_011038_0000.pdf">
-                    <i id="i_2" class="fa fa-download" style="font-size: 1.4em; color: rgb(102, 131, 229);"></i>
+                    href="./assets/jmd/Présentation Entreprise Professionnelle et Moderne Jaune et Noir_20250919_011038_0000.pdf">
+                    <i id="i_2" class="fa fa-download" style="font-size: 1.4em; color: rgb(255, 255, 255);"></i><br />
+                    Présentation (PDF)
                 </a>
             </div>
         </div>
@@ -103,81 +132,103 @@
 
     <!--Section Blog-->
     <section id="blog">
-        <h2>Blog</h2>
-        <p>
-            Nous vous proposons nos meilleurs services à un coût abordable et adaptatif
-        </p>
+        <br />
+        <h2>
+            Notre savoir-faire & Projets Réalisé
+        </h2>
 
         <div class="blog-list">
             <div class="blog-item">
-                <p>Création de site et application web profesionnel</p>
+                <p>Conception de visuels publicitaires et Production audiovisuelle</p>
                 <div class="img-bloc">
-                    <img src="/assets/photos/site-web.png" />
+                    <img src="./assets/photos/contenu.png" />
                 </div>
             </div>
-
-            <div class="blog-item">
-                <p>Conception de base de données profesionnel</p>
-                <div class="img-bloc">
-                    <img src="/assets/photos/bd.png" />
-                </div>
-            </div>
-
-            <div class="blog-item">
-                <p>Intégration de l'intelligence artificiel</p>
-                <div class="img-bloc">
-                    <img src="/assets/photos/ia.png" />
-                </div>
-            </div>
-
             <div class="blog-item">
                 <p>Création de compte et page réseau sociaux profesionnel</p>
                 <div class="img-bloc">
-                    <img src="/assets/photos/reseaux-sociaux.png" />
+                    <img src="./assets/photos/reseaux-sociaux.png" alt="Image Reseaux sociaux" />
+                </div>
+            </div>
+            <div class="blog-item">
+                <p>Conception de sites et applications web profesionnel</p>
+                <div class="img-bloc">
+                    <img src="./assets/photos/site-web.png" alt="Projet CRDIA" />
+                </div>
+            </div>
+            <div class="blog-item">
+                <p>Conception de base de données profesionnel</p>
+                <div class="img-bloc">
+                    <img src="./assets/photos/bd.png" alt="Image base de données" />
                 </div>
             </div>
 
-            <div class="blog-item">
-                <p>
-                    Conception de visuels publicitaires et Production audiovisuelle
-                </p>
+            <div class="blog-item projet">
+                <p>Intégration de l'intelligence artificiel</p>
                 <div class="img-bloc">
-                    <img src="/assets/photos/contenu.png" />
+                    <img src="./assets/photos/ia.png" alt="image IA" />
                 </div>
+            </div>
+            <div class="blog-item projet">
+                <p>Projets</p>
+                <div class="img-bloc">
+                    <img src="./assets/photos/projet-recent.jpg" alt="Image Reseaux sociaux" />
+                </div>
+                <p id="projet">
+                    → <a href="https://halal-dish-finder.lovable.app/">Nourriture Halal</a> <br />
+                    → <a href="#"> CERDIA</a> <br />
+                    → <a href="#">QG Resto-bar et autres...</a>
+                </p>
             </div>
         </div>
     </section>
 
     <!--Section Service-->
     <section id="service">
+        <br />
         <h2>Nos Services</h2><br>
+        <p>Nous vous proposons nos meilleurs services à un coût abordable et adaptatif</p><br />
 
         <div class="service-list">
             <div class="service-item">
-                <p><i id="i_2" class="fa fa-camera" style="font-size: 2em; color: rgb(215, 110, 4);"></i></p><br>
-                <h3>Création de contenus</h3><br>
+                <p>
+                    <i id="i_2" class="fa fa-camera" style="font-size: 2em; color: rgb(215, 110, 4);"></i>
+                </p><br>
+                <h3>
+                    Création de contenus
+                </h3><br>
                 <ul class="liste-service">
                     <li>Gestion et animation des réseaux sociaux (Facebook, Instagram, TikTok, Youtube)</li>
                     <li>Conception de visuels publicitaires (affiches, flyers, bannières, cartes de visite)</li>
                     <li>Production audiovisuelle (vidéos promotionnelles, teasers, podcasts)</li>
                 </ul>
+                <a href="./assets/jmd/jmd-concept affiche contenus.png">Obtenir un livré (image)</a>
             </div>
 
             <div class="service-item">
-                <p><i id="i_2" class="fa fa-code" style="font-size: 2em; color: rgb(215, 110, 4);"></i></p><br>
-                <h3>Création de sites web, applications web et intégration IA</h3><br>
+                <p>
+                    <i id="i_2" class="fa fa-code" style="font-size: 2em; color: rgb(215, 110, 4);"></i>
+                </p><br>
+                <h3>
+                    Création de sites web, applications web et intégration IA
+                </h3><br>
                 <ul class="list-service">
-                    <li>Développement de sites vitrines et e-commerce</li>
+                    <li>Conception de sites vitrines et e-commerce</li>
                     <li>Conception d’applications mobiles (Android)</li>
                     <li>Refonte et optimisation de sites existants</li>
                     <li>Maintenance</li>
                     <li>Création de ChatBot</li>
                 </ul>
+                <a href="./assets/jmd/jmd-concept affiche conception web.jpg">Obtenir un livré (image)</a>
             </div>
 
             <div class="service-item">
-                <p><i id="i_2" class="fa fa-database" style="font-size: 2em; color: rgb(215, 110, 4);"></i></p><br>
-                <h3>Conception de base de données</h3><br>
+                <p>
+                    <i id="i_2" class="fa fa-database" style="font-size: 2em; color: rgb(215, 110, 4);"></i>
+                </p><br>
+                <h3>
+                    Conception de base de données
+                </h3><br>
 
                 <ul class="liste-service">
                     <li>Analyse des besoins et modélisation de bases de données</li>
@@ -185,78 +236,118 @@
                     <li>Solutions pour la sécurisation et sauvegarde des informations</li>
                     <li>Formation à l’utilisation des bases de données</li>
                 </ul>
+                <a href="./assets/jmd/jmd-concept affiche base de donnees.jpg">Obtenir un livré (image)</a>
             </div>
 
             <div class="service-item">
-                <img src="/assets/photos/formation.png" class="formation" />
-                <h3>Nous proposons de formations en</h3><br />
+                <img src="./assets/photos/formation.png" class="formation-image" />
+                <h3>
+                    Nous proposons de formations en
+                </h3><br />
                 <ul class="liste-service">
                     <li>Création de contenus</li>
                     <li>Création de site et applications web</li>
                     <li>Analyse et conception de base de données</li>
                 </ul>
+                <a class="fichier" href="#">Obtenir un livré (image)</a>
+                <span id="message"></span>
             </div>
         </div>
     </section>
 
     <!--Section Contact-->
     <section id="contact">
-        <h2>Contactez-nous</h2>
-        <br>
-        <form action="mailto:jmdconcept3@gmail.com" method="POST" enctype="text/plain">
-            <label for="nom" class="identite">Nom:</label>
-            <input type="text" name="nom" placeholder="merdi bangongo..." required><br>
+        <h2>Nos coordonnées</h2>
 
-            <label for="email" class="identite">Email:</label>
-            <input type="email" name="email" placeholder="email@exemple.com..." required><br>
+        <div class="contact-list">
+            <div class="contact-item contact-item-1">
 
-            <label for="message" class="message">Message:</label>
-            <textarea name="message" rows="2" placeholder="Votre message ici..." required></textarea><br>
+                <h3>Contactez-nous sur</h3>
 
-            <button type="submit">Envoyer</button>
-            <button type="reset">Annuler</button>
-        </form>
+                <div class="lien-media-contact">
+                    <a href="https://www.facebook.com/profile.php?id=61581381020725">
+                        <i class="fa fa-facebook" style="color: blue; font-size: 2em;"></i>
+                        jmd-concept
+                    </a>
+                    <br />
+                    <a href="https://wa.me/243824499881">
+                        <i class="fa fa-whatsapp" style="color: rgb(2, 155, 2); font-size: 2em;"></i>
+                        +243838120851
+                    </a>
+                    <br />
+                    <a href="https://www.instagram.com/invites/contact/?igsh=1ov6g05h5lnxk&utm_content=zjmjfv7">
+                        <i id="i_2" class="fa fa-instagram" style="font-size: 2em; color: rgb(245, 72, 72);"></i>
+                        jmd-concept
+                    </a>
+                    <br />
+                    <a href="mailto:jmdconcept3@gmail.com">
+                        <i id="i_2" class="fa fa-envelope-o" style="font-size: 2em; color: rgb(228, 93, 93);"></i>
+                        jmdconcept3@gmail.com
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7956.226267183972!2d15.307658142685373!3d-4.389918699999973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2scd!4v1758995103136!5m2!1sfr!2scd"
+                    width="650" height="380" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <p class="adresse">
+                    <i class="fa fa-map-marker" style="color: rgb(169, 3, 3); font-size: 1.8em;"></i>
+                    Rond-point Nagaba/Lemba, Kinshasa, RD Congo
+                </p>
+            </div>
+        </div>
+
     </section>
 
 
     <!--Footer-->
     <footer id="footer">
-        <div id="container">
-            <div class="bloc1">
+        <img src="./assets/photos/logo-jmd.png" alt="logo jmd-concept" />
+       
+        <div id="container">    
+            <div class="bloc-1">
                 <p>
-                    Notre concept est de créer un
+                    Notre concepte est de créer un
                     pont entre les marques, les
-                    projets et leur public grâce à
+                    projets <br /> et leur public grâce à
                     une communication moderne,
                     créative et accessible.
                 </p>
-                <a href="https://wa.me/243838120851">
-                    <i id="i_2" class="fa fa-whatsapp" style="font-size: 3em; color: rgb(23, 175, 20);"></i>
-                </a>
-                <a href="#">
-                    <i id="i_2" class="fa fa-facebook" style="font-size: 3em; color: rgb(5, 40, 238);"></i>
-                </a>
-                <a href="#">
-                    <img src="/assets/photos/tiktok.png" alt="jmd-concept TikTok" class="tiktok" />
-                </a>
-                <a href="#">
-                    <i id="i_2" class="fa fa-instagram" style="font-size: 3em; color: rgb(245, 72, 72);"></i>
-                </a>
 
-                <a href="#">
-                    <i id="i_2" class="fa fa-youtube" style="font-size: 3em; color: rgb(150, 3, 3);"></i>
-                </a>
+                <a href="#service">Consultez nos Serivices 👈</a>
 
-                <a href="#">
-                    <i id="i_2" class="fa fa-envelope-o" style="font-size: 3em; color: rgb(150, 3, 3);"></i>
-                </a><br>
             </div>
+            <div class="bloc-2">
+                <div class="auteur">
+                    <h4 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">L'équipe jmd-concept :
+                    </h4>
+
+                    <span>▶</span>
+                    <a href="https://wa.me/243859118386">
+                        Josué Edjuku
+                    </a><br />
+
+                    <span>▶</span>
+                    <a href="https://wa.me/243824499881">
+                        Merdi Bangongo
+                    </a><br />
+
+                    <span>▶</span>
+                    <a href="https://wa.me/243821061748">
+                        Dany Banani
+                    </a><br />
+                </div>
+            </div>
+            <div class="retour-entete"><a href="#en-tete">⇧</a></div>
         </div>
 
         <p class="copy">&copy <span id="date"></span> <br>jmd-concept. Tous droits réservés.</p><br>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
