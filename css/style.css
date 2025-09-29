@@ -46,7 +46,7 @@ body {
 }
 
 .home-bloc {
-     background: url('/assets/photos/arriere-plan.png') no-repeat center center/cover;
+     background: url('../assets/photos/arriere-plan.png') no-repeat center center/cover;
      height: 100vh;
      background-color: #2d2d2c;
 }
@@ -100,10 +100,10 @@ header {
      font-weight: bold;
      margin-top: 20px;
      padding: 4px;
-     margin-left: 50px;
+     margin-left: 60px;
      margin-right: 50px;
      transition: all 1s ease-out;
-     z-index:999;
+     z-index: 999;
 }
 
 .nav-list a:hover {
@@ -137,6 +137,10 @@ header {
      padding: 0px;
      margin-left: 20px;
      transition: all 1s ease-in;
+}
+
+.lien-media {
+     display: none;
 }
 
 /* Home */
@@ -183,14 +187,16 @@ header {
      animation: bougeTitre infinite 3s linear;
 }
 
-@keyframes bougeTitre{
-     0%{
+@keyframes bougeTitre {
+     0% {
           transform: translate(0px);
      }
-     50%{
+
+     50% {
           transform: translate(20px);
      }
-     100%{
+
+     100% {
           transform: translate(0px);
      }
 }
@@ -282,7 +288,7 @@ header {
 }
 
 .about-bloc:hover {
-     box-shadow: 0 6px 7px 3px rgba(39, 22, 1, 0.514);
+     box-shadow: 0 5px 5px 3px rgba(190, 168, 140, 0.514);
 }
 
 #about h2 {
@@ -467,15 +473,11 @@ header {
      background-color: #f1b749;
 }
 
-.service-item a:visited {
-     background-color: #fbe1b3;
-}
-
 /* Contact */
 #contact {
      align-items: center;
      background-color: #ffffff;
-     height: 90vh;
+     height: 80vh;
      text-align: center;
      padding: 0.5em;
      margin: 10px;
@@ -597,9 +599,9 @@ footer>#container {
 }
 
 .copy {
-     margin: 3rem 0rem 0rem 0rem;
+     margin: 0.1rem 0rem 0rem 0rem;
      text-align: center;
      font-style: italic;
      font-size: 14px;
-     color: #ffffff;
+     color: #bdbbbb;
 }
