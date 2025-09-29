@@ -1,3 +1,4 @@
+/* Police embarqué */
 @font-face {
      font-family: ma_police;
      src: url("../assets/fonts/spring_nature/Spring\ Nature.otf") format('otf'),
@@ -26,7 +27,7 @@ body {
      left: 0;
      width: 100%;
      height: 100%;
-     background: #fcfcfc;
+     background: white;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -36,12 +37,12 @@ body {
 #prechargement.fade-out {
      opacity: 0;
      visibility: hidden;
-     transition: visibility 1s ease, opacity 6s linear;
+     transition: visibility 2s ease, opacity 100s linear;
 }
 
 .image-prechargement {
-     opacity: 0.9;
-     width: 20%;
+     opacity: 1;
+     width: 30%;
      border-radius: 1%;
 }
 
@@ -68,7 +69,7 @@ header {
      padding: 5px;
      transition: all 1s ease-in;
      border-bottom: 1px solid rgba(63, 62, 62, 0.212);
-     z-index: 1000;
+     z-index: 1100;
 }
 
 .logo {
@@ -98,7 +99,7 @@ header {
      color: white;
      text-decoration: none;
      font-weight: bold;
-     margin-top: 20px;
+     margin-top: 25px;
      padding: 4px;
      margin-left: 60px;
      margin-right: 50px;
@@ -153,34 +154,34 @@ header {
      transition: all 1s ease;
 }
 
+.intro {
+     padding: 5px;
+     margin: 5em;
+     margin-top: -20em;
+     text-align: justify;
+     transition: all 1s ease;
+     z-index: 100;
+}
+
 .intro p {
      font-size: 16;
      color: #f9f8f8;
-     padding: 5px;
-     margin: 15px;
      text-align: justify;
-     margin-top: -10.2em;
      transition: all 1s ease;
+     z-index: 100;
+}
+
+.intro .slogan {
+     text-align: center;
+     color: rgb(247, 215, 156);
+     font-size: 25px;
 }
 
 .intro p span {
      font-weight: bold;
-     font-size: 20px;
-     color: #fce9ba;
-}
-
-.intro p {
-     color: #ddd;
-     margin-left: 10em;
-     margin-right: 10em;
      font-size: 18px;
-     z-index: 1100;
-
-}
-
-.intro p span {
-     margin: 10px;
-     margin-left: 40px;
+     color: #fce9ba;
+     margin-left: 5%;
 }
 
 .intro p:hover {
@@ -204,7 +205,7 @@ header {
 .bloc-btn {
      position: absolute;
      left: 44%;
-     top: 60%;
+     top: 48%;
      margin: auto;
      display: flex;
      justify-content: center;
@@ -232,14 +233,14 @@ header {
 
 #home img {
      position: absolute;
-     bottom: 20px;
-     right: 80px;
-     width: 440px;
-     height: 440px;
+     bottom: 10px;
+     right: 180px;
+     width: 350px;
+     height: 350px;
      border-radius: 50%;
      border: 2px #23221e2c Solid;
-     opacity: 0.9;
-     animation: Home-image infinite 40s linear;
+     opacity: 0.8;
+     animation: Home-image infinite 38s linear;
 }
 
 #home img:hover {
@@ -252,7 +253,7 @@ header {
      }
 
      50% {
-          transform: translateX(60px);
+          transform: translateX(100px);
      }
 
      100% {
@@ -263,7 +264,7 @@ header {
 
 #about,
 #service {
-     padding: 100px 50px;
+     padding: 40px 0px;
      margin: 0.1em;
 }
 
@@ -276,8 +277,8 @@ header {
 
 .about-bloc {
      margin: auto;
-     padding: 20px;
-     width: 70%;
+     padding: 35px;
+     width: 80%;
      height: auto;
      display: block;
      gap: 10px;
@@ -293,12 +294,16 @@ header {
 
 #about h2 {
      margin-top: 2em;
+     margin-bottom: 1em;
      text-align: center;
+     border-radius: 6px;
+     box-shadow: 0 3px 3px 2px rgba(237, 237, 237, 0.35);
 }
 
 #about h3 {
      border-bottom: 1px Solid black;
      width: 450px;
+     margin: 1em;
 }
 
 #about p {
@@ -318,7 +323,7 @@ header {
 .download {
      text-align: center;
      width: 200px;
-     margin-left: 38%;
+     margin-left: 42%;
      background-color: #6e6e6cae;
      border: 2px solid white;
      border-radius: 5px;
@@ -339,35 +344,38 @@ header {
      height: 100%;
      text-align: center;
      transition: all 1s ease;
-     margin-bottom: 1em;
+     margin-bottom: 2em;
 }
 
 #blog h2 {
-     margin-top: 2em;
+     margin: 2.5%;
+     border-radius: 6px;
+     box-shadow: 0 3px 3px 2px rgba(237, 237, 237, 0.35);
 }
 
 .blog-item p {
-     margin-top: 1em;
+     margin-top: 0.5em;
 }
 
 .blog-list {
      display: flex;
      flex-direction: row;
      justify-content: center;
+     align-items: center;
      flex-wrap: wrap;
      gap: 50px;
-     padding: 5px;
+     padding: 2px;
 }
 
 .blog-item {
-     width: 300px;
+     width: 400px;
      height: 100%;
-     margin-top: 1em;
      border-radius: 10px;
      border: 1px solid #e0dfdf;
      background-color: white;
      color: rgb(33, 32, 32);
      box-shadow: 0 6px 7px -3px rgba(106, 106, 106, 0.35);
+     transition: all 1s ease;
 }
 
 .blog-item:hover {
@@ -386,7 +394,6 @@ header {
      width: 100%;
      height: auto;
      border-radius: 2px;
-     margin-top: 0.5em;
 }
 
 .blog-item a {
@@ -397,21 +404,15 @@ header {
      margin-top: 1em;
 }
 
-.projet {
-     width: 580px;
-     height: auto;
-     margin-top: 1em;
-}
-
 .projet img {
      width: 100%;
-     height: 200px;
+     height: 160px;
 }
 
-.projet #projet {
-     padding: 10px;
+.projet #list-projet {
+     padding: 2px;
      text-align: start;
-     margin-left: 5em;
+     margin-left: 2em;
 }
 
 /* Service */
@@ -419,37 +420,45 @@ header {
      color: rgb(68, 67, 67);
      height: 100%;
      text-align: center;
-     background-color: rgba(241, 241, 241, 0.719);
+     background-color: #fdfdfd;
      transition: all 1s ease;
+     margin-bottom: 2em;
 }
 
 #service h2 {
-     margin-top: -30px;
+     margin-top: 2em;
+     border-radius: 6px;
+     box-shadow: 0 3px 3px 2px rgba(237, 237, 237, 0.35);
+}
+
+#service h3 {
+     margin: 1em;
+}
+
+#service .label {
+     margin-top: 2.8em;
+     color: #5d5c5c;
 }
 
 .service-list {
      display: flex;
-     justify-content: space-around;
+     justify-content: center;
      flex-wrap: wrap;
      list-style: none;
-     height: auto;
-}
-
-.service-list ul li {
-     list-style: none;
-     text-align: start;
+     gap: 40px;
 }
 
 .service-item {
-     width: 550px;
+     width: 380px;
      height: auto;
-     padding: 20px;
-     margin-top: 1.5em;
-     border: 1px solid rgb(150, 148, 148);
+     padding: 3%;
+     font-size: 15px;
      border-radius: 10px;
+     border: 1px solid #e0dfdf;
      background-color: white;
      box-shadow: 0 6px 7px -3px rgba(106, 106, 106, 0.35);
      color: rgb(29, 28, 28);
+     transition: all 1s ease;
 }
 
 .service-item:hover {
@@ -457,17 +466,29 @@ header {
 }
 
 .service-item .formation-image {
-     width: 8vh;
-     border-radius: 105px;
-     margin-top: 0.1em;
+     width: 5vh;
+     margin-bottom: 4%;
+     border-radius: 100px;
+}
+
+.service-item .lists {
+     width: 100%;
+     height: 200px;
+     transition: all 1s ease;
+}
+
+.service-list ul li {
+     list-style: decimal;
+     text-align: start;
+     font-size: 15px;
 }
 
 .service-item a {
      text-decoration: none;
      font-size: 12.5px;
      color: white;
-     padding: 6px;
-     margin-top: 25px;
+     padding: 4px;
+     margin-top: 24px;
      border-radius: 5px;
      background-color: #f68617;
      border: 1px solid rgba(128, 128, 128, 0.661);
@@ -475,6 +496,10 @@ header {
 
 .service-item a:hover {
      background-color: #f1b749;
+}
+
+.lien-fichier {
+     margin: 5%;
 }
 
 /* Contact */
@@ -490,6 +515,8 @@ header {
 
 #contact h2 {
      margin-top: 2em;
+     border-radius: 6px;
+     box-shadow: 0 3px 3px 2px rgba(237, 237, 237, 0.35);
 }
 
 .contact-list {
@@ -504,15 +531,19 @@ header {
      width: auto;
      height: auto;
      margin: 40px;
-     padding: 2px;
      border-radius: 5px;
      background-color: white;
      box-shadow: 0 6px 6px 7px rgba(218, 217, 217, 0.35);
+     transition: all 1s ease-in;
+}
+
+.contact-item:hover {
+     box-shadow: 0 4px 4px 2px #fbeed6;
 }
 
 .contact-item h3 {
      text-align: center;
-     margin: 2.5em 0em 2.5em;
+     margin: 1.5em 0em 1.5em;
 }
 
 .contact-item a {
@@ -526,30 +557,43 @@ header {
      margin: 5px;
 }
 
+.contact-list .contact-item-1 {
+     width: 400px;
+}
+
+.contact-item img {
+     margin-top: 2em;
+     width: 100%;
+     height: 160px;
+}
+
+.contact-list .contact {
+     padding: 4px;
+}
+
 .adresse {
      text-align: center;
-     margin-block: 10px;
+     margin-block: 8px;
 }
 
 /* Footer */
 footer {
      background-color: #262626;
      color: white;
-     height: 50vh;
-     padding: 2em;
+     height: 50%;
+     padding: 1em;
      transition: all 1s ease;
 }
 
 footer>#container {
      margin: auto;
-     padding: 5px;
      justify-content: space-around;
      text-align: center;
      display: flex;
      align-items: center;
      flex-wrap: nowrap;
-     gap: 40px;
-     padding: 2rem;
+     gap: 20px;
+     padding: 1rem;
      border-bottom: 1px solid rgb(93, 92, 92);
      background-color: #262626;
 }
@@ -588,11 +632,19 @@ footer>#container {
 
 .retour-entete {
      position: relative;
-     top: -100px;
+     top: -65px;
      color: white;
 }
 
 .retour-entete a {
+     opacity: 0.4;
+     color: white;
+     font-size: 30px;
+     text-decoration: none;
+}
+
+.retour-entete a:hover {
+     opacity: 1;
      color: white;
      font-size: 30px;
      text-decoration: none;

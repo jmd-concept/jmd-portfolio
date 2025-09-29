@@ -5,20 +5,16 @@
         margin: 0;
     }
 
-    .no-scroll {
+    /*.no-scroll {
         /* empêche de scroller derrière */
+    /*
         overflow: hidden;
-    }
+    }*/
 
     .navbar .logo {
-        max-width: 120px;
+        max-width: 110px;
         top: -18px;
         z-index: 1000;
-    }
-
-    .navbar .menu {
-        display: block;
-        z-index: 1100;
     }
 
     .nav-list {
@@ -27,8 +23,8 @@
         position: fixed;
         top: 0;
         right: 0;
-        width: 50%;
-        height: 100vh;
+        width: 60%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -39,7 +35,7 @@
         /* Caché hors "cran par défaut */
         transform: translateX(100%);
         transition: transform 0.5s ease-in-out;
-        z-index: 1100;
+        z-index: 1000;
     }
 
     .nav-list.mobile-menu {
@@ -47,14 +43,20 @@
         transform: translateX(0);
     }
 
-    .nav-list ul {
+    .navbar .menu {
+        display: block;
+        z-index: 1100;
+    }
+
+    .nav-list li {
         padding: 5px;
     }
 
     .nav-list li a {
-        padding: 20px;
+        padding: 2px;
         font-size: 1.1em;
         margin-top: 1.2em;
+        margin-left: 5em;
     }
 
     .lien-media {
@@ -64,14 +66,14 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-top: 85%;
+        margin-top: 30%
     }
 
     .nav-list .lien-media a {
         padding: 0px;
         margin: 20px;
         font-size: 1.1em;
-        margin-top: 0.5em;
+        margin-top: 5em;
     }
 
     .navbar.scroller {
@@ -83,23 +85,45 @@
         max-width: 140px;
     }
 
+    .navbar.scroller .nav-list li a {
+        padding: 2px;
+        font-size: 1.1em;
+        margin-top: 1.2em;
+        margin-left: 5em;
+    }
+
+    .navbar.scroller .nav-list .lien-media a {
+        padding: 0px;
+        margin: 20px;
+        font-size: 1.1em;
+        margin-top: 5em;
+    }
+
     /*Home*/
     #home {
         padding: 0;
         margin: 0;
     }
 
-    .intro p {
-        margin: 5em;
-        margin-top: -15em;
+    .intro {
+        margin: 2em;
+        margin-top: -25em;
         font-size: 1.3rem;
         transition: all 1s ease;
-        z-index: 1000;
+    }
+
+    .intro p {
+        font-size: 16px;
+        z-index: 100;
+    }
+
+    .intro .slogan {
+        margin-top: 0.1em;
     }
 
     .bloc-btn {
         position: absolute;
-        top: 48%;
+        top: 50%;
         left: 40%;
         margin: auto;
         display: flex;
@@ -117,10 +141,10 @@
     #home img {
         margin: auto;
         position: absolute;
-        bottom: 25px;
+        bottom: 5px;
         right: 30%;
-        width: 350px;
-        height: 350px;
+        width: 325px;
+        height: 325px;
         border-radius: 50%;
         border: 2px #2e2e2d29 Solid;
     }
@@ -132,7 +156,7 @@
 
     .about-bloc {
         padding: 30px;
-        width: 100%;
+        width: 90%;
     }
 
     .download {
@@ -226,6 +250,10 @@
         transition: all 1s ease-in;
     }
 
+    .contact-list .contact-item-1 {
+        width: 95%;
+    }
+
     .lien-media-contact {
         display: flex;
         flex-wrap: wrap;
@@ -285,14 +313,14 @@
     }
 
     /* Home */
-    .intro p {
+    .intro {
         margin: 2em;
-        margin-top: -16em;
-        font-size: 1.25rem;
+        margin-top: -14.5em;
+        font-size: 1.1rem;
     }
 
     .bloc-btn {
-        top: 55%;
+        top: 60%;
     }
 
     .btn {
@@ -301,8 +329,8 @@
 
     #home img {
         right: 25%;
-        width: 280px;
-        height: 280px;
+        width: 235px;
+        height: 235px;
     }
 
     /* About */
@@ -312,7 +340,7 @@
 
     .about-bloc {
         padding: 15px;
-        width: 100%;
+        width: 80%;
     }
 
     #about h2 {
@@ -378,6 +406,10 @@
         gap: 20px;
     }
 
+    .contact-list .contact-item-1 {
+        width: 460px;
+    }
+
     .contact-item a i {
         margin: 5px;
     }
@@ -386,31 +418,34 @@
     footer {
         padding: 0;
         margin: 0;
+        height: 100%;
     }
 
     footer>#container {
+        flex-direction: column;
         gap: 10px;
         padding: 1rem;
     }
 
     .bloc-1 {
-        width: 60%;
-    }
-
-    .bloc-1>p {
-        margin: 5px;
+        padding: 15px;
+        width: 80%;
+        border-right: none;
+        border-bottom: 1px solid rgb(106, 105, 105);
     }
 
     .bloc-1 a {
-        margin: 5px;
+        margin: 30px;
+        margin-left: 50px;
     }
 
     .bloc-2 {
-        width: 40%;
+        padding: 10px;
+        width: 70%;
     }
 
     .bloc-2 h4 {
-        margin: 0px 0px 10px -6px;
+        margin: 0px 0px 15px -10px;
     }
 
     .bloc-2 a {
@@ -418,11 +453,8 @@
     }
 
     .retour-entete {
-        top: -80px;
-    }
-
-    .retour-entete a {
-        font-size: 20px;
+        top: -350px;
+        left: 45%;
     }
 
     .copy {
@@ -434,25 +466,31 @@
 
 /* Extra Small <= 576px */
 @media screen and (max-width: 576px) {
+
     /* Home */
-    .intro p {
-        margin-top: -20em;
+    .intro {
         font-size: 1.1rem;
+        margin: 0.5rem;
     }
 
     .bloc-btn {
-        top: 54%;
+        top: 58%;
         left: 30%;
         width: 40%;
     }
 
     #home img {
         right: 25%;
-        width: 260px;
-        height: 260px;
+        width: 250px;
+        height: 250px;
     }
 
     /* About */
+    #about {
+        margin: 0;
+        padding: 5px;
+    }
+
     .about-bloc {
         margin: 0;
         padding: 12px;
@@ -482,7 +520,7 @@
     }
 
     /* Contact */
-    #contact{
+    #contact {
         padding: 0;
         margin: 0;
     }
@@ -531,5 +569,54 @@
 
     .copy {
         font-size: 15px;
+    }
+}
+
+/* Ecran orienté */
+
+@media (max-width: 992px) and (orientation: landscape) {
+    .intro {
+        margin-top: -16em;
+        padding: 2em;
+        font-size: 12px;
+    }
+
+    .bloc-btn {
+        top: 65%;
+        left: 40%;
+    }
+
+    #home img {
+        bottom: 0px;
+        right: 150px;
+        width: 200px;
+        height: 200px;
+    }
+
+    #about,
+    #service,
+    #blog {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .intro {
+        margin-top: -16em;
+        padding: 2em;
+        font-size: 12px;
+    }
+
+    .bloc-btn {
+        top: 60%;
+        left: 38%;
+    }
+
+    #home img {
+        bottom: 0px;
+        right: 80px;
+        width: 150px;
+        height: 150px;
     }
 }

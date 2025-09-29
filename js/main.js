@@ -14,24 +14,58 @@ document.addEventListener("DOMContentLoaded", () => {
     // Afficher le contenu avec fondu
     content.classList.add("visible");
   });
+
+  // Affiche la version
+  document.querySelector(".version").textContent = "^0.1.0";
+  document.querySelector(".version-footer").textContent = "^0.1.0";
+
+  // Affiche automatiquement l'année courante
+  document.getElementById("date").textContent = new Date().getFullYear();
+
 });
 
 /*  Menu au formant mobile (Gestion de la responsivité ) */
-
 document.addEventListener('DOMContentLoaded', () => {
-  const menu = document.querySelector(".menu")
+  const menu = document.querySelector(".menu");
+  const menuIcon = document.getElementById("menuIcon");
   const navLinks = document.querySelector(".nav-list");
-
   const navbar = document.querySelector(".navbar");
 
   menu.addEventListener('click', () => {
-    navLinks.classList.toggle('mobile-menu')
+    // toggle menu mobile
+    navLinks.classList.toggle('mobile-menu');
     document.body.classList.toggle('no-scroll');
-
     navbar.classList.remove('scroller');
-  })
 
-})
+    /** Changer l'icône */
+    if (navLinks.classList.contains('mobile-menu')) {
+      // menu ouvert → croix
+      menuIcon.classList.remove('fa-reorder');
+      menuIcon.classList.add('fa-fa-solid');
+    } else {
+      // menu fermé → hamburger
+      menuIcon.classList.remove('fa-solid');
+      menuIcon.classList.add('fa-reorder');
+    }
+
+  }); //menuIcon.textContent = menuIcon.textContent === '✖' ? '☰' : '✖';
+
+  //Fermer le menu quand on clique hors du menu
+  document.addEventListener('click', (e) => {
+    // si clic hors navLinks et hors bouton menu
+    if (
+      navLinks.classList.contains('mobile-menu') &&
+      !navLinks.contains(e.target) &&
+      !menu.contains(e.target)
+    ) {
+      navLinks.classList.remove('mobile-menu');
+      document.body.classList.remove('no-scroll');
+      // réinitialiser l’icône
+      menuIcon.classList.remove('fa-solid');
+      menuIcon.classList.add('fa-reorder');
+    }
+  });
+});
 
 /** Action au survol de l'écran ou scrol */
 
@@ -45,10 +79,3 @@ window.addEventListener('scroll', function () {
   }
 });
 
-//Fichiers
-document.getElementsByClassName("fichier").addEventListener("click", () => {
-  document.getElementById("message").textContent = "Page d'informations pour l'instant"
-})
-
-//Date Copy right
-document.getElementById("date").textContent = new Date().getFullYear();

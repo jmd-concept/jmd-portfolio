@@ -4,12 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jmd-concept</title>
+    <title>jmd Concept</title>
     <meta name="description"
         content="Ce site web est la présentation de jmd-concept pour être connu partout dans le monde le monde" />
-    <!-- favicon -->
-    <link rel="icon" type="image/x-icon" sizes="12x12" href="#">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/photos/logo mds.png">
+    
+        <!-- favicon -->
+    <link rel="icon" type="icon/x-icon" href="./assets/photos/logo-jmd-entete.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
+
+    <!-- Fichiers CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./assets/font-awesome-4.7/css/font-awesome.min.css">
@@ -28,7 +34,7 @@
             <nav class="navbar">
                 <!-- Logo-->
                 <a href="#home">
-                    <img src="./assets/photos/logo-jmd.png" alt="Logo jmd-concept" class="logo">
+                    <img src="./assets/photos/logo-jmd.png" alt="Logo jmd-concept" class="logo" title="logo jmd-concept">
                 </a>
 
                 <ul class="nav-list">
@@ -56,10 +62,13 @@
                             <i class="fa fa-envelope-o" style="color: white;"></i>
                         </a>
                     </li>
+                    <li class="lien-media">
+                        <p class="version" style="color: rgb(164, 162, 162); text-align: center; font-size: 12px;"></p>
+                    </li>
                 </ul>
 
                 <div class="menu">
-                    <i id="menu" class="fa fa-reorder" style="font-size: 2em; color: rgb(245, 243, 243);"></i>
+                    <i id="menuIcon" class="fa fa-reorder fa-close" style="font-size: 2em; color: rgb(245, 243, 243);"></i>
                 </div>
             </nav>
         </header>
@@ -67,29 +76,30 @@
         <!--Section Accueil-->
         <section id="home">
             <div class="intro">
-                 <p>
-                    <span>JMD Concept,</span><br /> Est une structure, qui est animée par l’ambition de répondre 
+                <p class="slogan">La créativité digitale sans
+                    limite</p>
+
+                <p>
+                    <span>JMD Concept,</span> est une structure, qui est animée par l’ambition de répondre
                     aux besoins technologiques modernes en communication, publicité et accompagnement
-                    Stratégique dnas le développement logiciel. nous nous positionnons avec une vision claire : 
+                    Stratégique dnas le développement logiciel. nous nous positionnons avec une vision claire :
                     offrir des solutions créatives, innovantes et accessibles aux entreprises, aux particuliers et aux
                     Organisations qui souhaitent accroître leur visibilité et valoriser leur image.
-                    <br/>
-                    <span>JMD, La créativité digitale sans limite</span>
                 </p>
-                <div class="bloc-btn">
-                    <a href="#contact" class="btn">
-                        Contactez-nous
-                    </a>
-                </div>
-
-                <img src="./assets/photos/arriere-plan.png" alt="" />
             </div>
+            
+            <div class="bloc-btn">
+                <a href="#contact" class="btn">
+                    <i class="fa fa-phone-square" style="font-size: 2em;"></i> Contactez-nous
+                </a>
+            </div>
+            <img src="./assets/photos/arriere-plan.png" alt="arriere-plan mouve" />
         </section>
     </div>
 
     <!--Section À propos-->
     <section id="about">
-        <h2>À propos de jmd-concept</h2> <br>
+        <h2>À propos de jmd concept</h2> <br>
 
         <div class="about-bloc">
             <div>
@@ -141,40 +151,41 @@
             <div class="blog-item">
                 <p>Conception de visuels publicitaires et Production audiovisuelle</p>
                 <div class="img-bloc">
-                    <img src="./assets/photos/contenu.png" />
+                    <img src="./assets/photos/contenu.png" alt="création de visuels et Production"/>
                 </div>
             </div>
             <div class="blog-item">
-                <p>Création de compte et page réseau sociaux profesionnel</p>
+                <p>Création de compte et page réseaux sociaux profesionnel</p>
                 <div class="img-bloc">
                     <img src="./assets/photos/reseaux-sociaux.png" alt="Image Reseaux sociaux" />
                 </div>
             </div>
             <div class="blog-item">
-                <p>Conception de sites et applications web profesionnel</p>
+                <p>Conception de sites et applications web profesionnel + email profesionnel</p>
                 <div class="img-bloc">
                     <img src="./assets/photos/site-web.png" alt="Projet CRDIA" />
                 </div>
             </div>
             <div class="blog-item">
-                <p>Conception de base de données profesionnel</p>
+                <p>Conception de base de données profesionnel sur mésure</p> <br />
                 <div class="img-bloc">
                     <img src="./assets/photos/bd.png" alt="Image base de données" />
                 </div>
             </div>
 
-            <div class="blog-item projet">
-                <p>Intégration de l'intelligence artificiel</p>
+            <div class="blog-item">
+                <p>Intégration de l'intelligence artificiel dans vos applications</p>
                 <div class="img-bloc">
                     <img src="./assets/photos/ia.png" alt="image IA" />
                 </div>
             </div>
             <div class="blog-item projet">
-                <p>Projets</p>
+                <p>Projets Réalisé</p>
                 <div class="img-bloc">
                     <img src="./assets/photos/projet-recent.jpg" alt="Image Reseaux sociaux" />
                 </div>
-                <p id="projet">
+
+                <p id="list-projet">
                     → <a href="https://halal-dish-finder.lovable.app/">Nourriture Halal</a> <br />
                     → <a href="#"> CERDIA</a> <br />
                     → <a href="#">QG Resto-bar et autres...</a>
@@ -183,26 +194,57 @@
         </div>
     </section>
 
+
     <!--Section Service-->
     <section id="service">
         <h2>Nos Services</h2>
-        <p>Nous vous proposons nos meilleurs services à un coût abordable et adaptatif</p><br />
+        <p class="label">Nous vous proposons nos meilleurs services à un coût abordable et adaptatif</p><br />
 
         <div class="service-list">
+             <div class="service-item">
+                <p>
+                    <i id="i_2" class="fa fa-globe" style="font-size: 2em; color: rgb(215, 110, 4);"></i>
+                </p><br>
+                <h3>
+                    Boostage de vos produits sur nos comptes réseaux sociaux
+                </h3>
+
+                <div class="lists">
+                    <ul class="liste-service">
+                        <li>
+                            Service de Boostage pour la promotion de vos produits.
+                        </li>
+                        <li>Serivice de création de comptes virtuel mobile money</li>
+                        <li>Gestion et suivi de vos promotions</li>
+                    </ul>
+                </div>
+
+                <div class="lien-fichier">
+                    <a href="./assets/jmd/jmd boostage.mp4">▼ Obtenir un livré (image)</a>
+                </div>
+            </div>
+
             <div class="service-item">
                 <p>
                     <i id="i_2" class="fa fa-camera" style="font-size: 2em; color: rgb(215, 110, 4);"></i>
                 </p><br>
                 <h3>
-                    Création de contenus
-                </h3><br>
-                <ul class="liste-service">
-                    <li>Gestion et animation des réseaux sociaux (Facebook, Instagram, TikTok, Youtube)</li>
-                    <li>Conception de visuels publicitaires (affiches, flyers, bannières, cartes de visite)</li>
-                    <li>Production audiovisuelle (vidéos promotionnelles, teasers, podcasts)</li>
-                </ul>
-                <br/>
-                <a href="./assets/jmd/jmd-concept affiche contenus.png">Obtenir un livré (image)</a>
+                    Création de contenus Professionnelle sur mésure
+                </h3>
+
+                <div class="lists">
+                    <ul class="liste-service">
+                        <li>
+                            Gestion et animation des réseaux sociaux (Facebook, Instagram, TikTok...)
+                        </li>
+                        <li>Conception de visuels publicitaires (affiches, flyers, bannières, cartes de visite)</li>
+                        <li>Production audiovisuelle (vidéos, teasers, podcasts)</li>
+                    </ul>
+                </div>
+
+                <div class="lien-fichier">
+                    <a href="./assets/jmd/jmd-concept affiche contenus.png">▼ Obtenir un livré (image)</a>
+                </div>
             </div>
 
             <div class="service-item">
@@ -210,18 +252,22 @@
                     <i id="i_2" class="fa fa-code" style="font-size: 2em; color: rgb(215, 110, 4);"></i>
                 </p><br>
                 <h3>
-                    Création de sites web, applications web et intégration IA
+                    Conception de sites web et applications, & intégration IA
                 </h3>
-                <br>
-                <ul class="list-service">
-                    <li>Conception de sites vitrines et e-commerce</li>
-                    <li>Conception d’applications mobiles (Android)</li>
-                    <li>Refonte et optimisation de sites existants</li>
-                    <li>Maintenance</li>
-                    <li>Création de ChatBot</li>
-                </ul>
-                <br/>
-                <a href="./assets/jmd/jmd-concept affiche conception web.jpg">Obtenir un livré (image)</a>
+
+                <div class="lists">
+                    <ul class="list-service">
+                        <li>Conception de sites vitrines, blogs, e-commerce, SPA, MPA...</li>
+                        <li>Portfolio profesionnel</li>
+                        <li>Conception d’applications mobiles (Android)</li>
+                        <li>Refonte et optimisation de sites existants et Maintenance</li>
+                        <li>Création de ChatBot</li>
+                    </ul>
+                </div>
+
+                <div class="lien-fichier">
+                    <a href="./assets/jmd/jmd-concept affiche conception web.jpg">▼ Obtenir un livré (image)</a>
+                </div>
             </div>
 
             <div class="service-item">
@@ -229,31 +275,66 @@
                     <i id="i_2" class="fa fa-database" style="font-size: 2em; color: rgb(215, 110, 4);"></i>
                 </p><br>
                 <h3>
-                    Conception de base de données
-                </h3><br>
+                    Conception de base de données et BI professionnelle
+                </h3>
 
-                <ul class="liste-service">
-                    <li>Analyse des besoins et modélisation de bases de données</li>
-                    <li>Développement et intégration de systèmes de gestion de données</li>
-                    <li>Solutions pour la sécurisation et sauvegarde des informations</li>
-                    <li>Formation à l’utilisation des bases de données</li>
-                </ul>
-                <br/>
-                <a href="./assets/jmd/jmd-concept affiche base de donnees.jpg">Obtenir un livré (image)</a>
+                <div class="lists">
+                    <ul class="liste-service">
+                        <li>Modélisation et conception de bases de données</li>
+                        <li>Conception d'entrepôt de données et processus ETL</li>
+                        <li>Analyse et visualisation des données pour la prise de décision</li>
+                        <li>Solutions pour la sécurisation et sauvegarde des informations</li>
+                    </ul>
+                </div>
+
+                <div class="lien-fichier">
+                    <a href="./assets/jmd/jmd-concept affiche base de donnees.jpg">▼ Obtenir un livré (image)</a>
+                </div>
+            </div>
+
+             <div class="service-item">
+                <p>
+                    <i id="i_2" class="fa fa-print" style="font-size: 2em; color: rgb(215, 110, 4);"></i>
+                </p><br>
+                <h3>
+                   Imprimerie moderne pour vos impression
+                </h3>
+
+                <div class="lists">
+                    <ul class="liste-service">
+                        <li>Affiche, Carte de visite et autres</li>
+                    </ul>
+
+                    <br/>
+                    <p>
+                        A bientôt...
+                    </p>
+                </div>
+
+                <div class="lien-fichier lien-fichier-last">
+                    <a class="fichier" href="#">▼ Obtenir un livré (image)</a>
+                </div>
+                <span id="message"></span>
             </div>
 
             <div class="service-item">
                 <img src="./assets/photos/formation.png" class="formation-image" />
                 <h3>
-                    Nous proposons de formations en
-                </h3><br />
-                <ul class="liste-service">
-                    <li>Création de contenus</li>
-                    <li>Création de site et applications web</li>
-                    <li>Analyse et conception de base de données</li>
-                </ul>
-                <br/>
-                <a class="fichier" href="#">Obtenir un livré (image)</a>
+                    Nous proposons plusieurs formations dans les domaines variés
+                </h3>
+
+                <div class="lists">
+                    <ul class="liste-service">
+                        <li>Création de contenus profesionnel</li>
+                        <li>Conception de sites et applications web</li>
+                        <li>Modelisation et conception de base de données</li>
+                        <li>Formation à l’utilisation des bases de données</li>
+                    </ul>
+                </div>
+
+                <div class="lien-fichier lien-fichier-last">
+                    <a class="fichier" href="#">▼ Obtenir un livré (image)</a>
+                </div>
                 <span id="message"></span>
             </div>
         </div>
@@ -271,7 +352,7 @@
                 <div class="lien-media-contact">
                     <a href="https://www.facebook.com/profile.php?id=61581381020725">
                         <i class="fa fa-facebook" style="color: blue; font-size: 2em;"></i>
-                        jmd-concept
+                        jmdconcept
                     </a>
                     <br />
                     <a href="https://wa.me/243824499881">
@@ -281,17 +362,20 @@
                     <br />
                     <a href="https://www.instagram.com/invites/contact/?igsh=1ov6g05h5lnxk&utm_content=zjmjfv7">
                         <i id="i_2" class="fa fa-instagram" style="font-size: 2em; color: rgb(245, 72, 72);"></i>
-                        jmd-concept
+                        JMD Concept
                     </a>
                     <br />
                     <a href="mailto:jmdconcept3@gmail.com">
                         <i id="i_2" class="fa fa-envelope-o" style="font-size: 2em; color: rgb(228, 93, 93);"></i>
                         jmdconcept3@gmail.com
                     </a>
+                    <br />
+
+                    <img src="./assets/photos/call-center.jpg" alt="Call-center" title="Contactez-nous" />
                 </div>
             </div>
 
-            <div class="contact-item">
+            <div class="contact-item contact">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7956.226267183972!2d15.307658142685373!3d-4.389918699999973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2scd!4v1758995103136!5m2!1sfr!2scd"
                     width="650" height="380" style="border:0;" allowfullscreen="" loading="lazy"
@@ -309,7 +393,7 @@
 
     <!--Footer-->
     <footer id="footer">
-        <div id="container">    
+        <div id="container">
             <div class="bloc-1">
                 <p>
                     Notre concepte est de créer un
@@ -324,7 +408,8 @@
             </div>
             <div class="bloc-2">
                 <div class="auteur">
-                    <h4 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">L'équipe jmd-concept :
+                    <h4 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Contactez l'équipe
+                        jmd-concept:
                     </h4>
 
                     <span>▶</span>
@@ -340,13 +425,18 @@
                     <span>▶</span>
                     <a href="https://wa.me/243821061748">
                         Dany Banani
-                    </a><br />
+                    </a>
+                    <br />
                 </div>
             </div>
+
             <div class="retour-entete"><a href="#en-tete">⇧</a></div>
         </div>
 
-        <p class="copy">&copy <span id="date"></span> <br>jmd-concept. Tous droits réservés.</p><br>
+        <p class="copy">
+            &copy; <span id="date" style="color: white;"></span> <br>
+            jmd-concept. Tous droits réservés.</p><br/>
+        <p class="version-footer" style="color: rgb(199, 198, 198); text-align: center; font-size: 12px;"></p>
     </footer>
 
     <script src="./js/main.js"></script>
