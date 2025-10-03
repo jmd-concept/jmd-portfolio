@@ -1,28 +1,14 @@
 
-/*  Evenement au préchargement de la page */
-
+// Settings
 document.addEventListener("DOMContentLoaded", () => {
-  const preloader = document.getElementById("prechargement");
-  const content = document.querySelector(".home-bloc");
-
-  // Masquer le préchargeur avec effet fondu
-  preloader.classList.add("fade-out");
-
-  // Quand l'animation du préchargeur est terminée
-  preloader.addEventListener('load', () => {
-    preloader.style.display = 'none';
-    // Afficher le contenu avec fondu
-    content.classList.add("visible");
-  });
 
   // Affiche la version
-  document.querySelector(".version").textContent = "^0.1.0";
-  document.querySelector(".version-footer").textContent = "^0.1.0";
+  document.querySelector(".version").textContent = "v0.1.1";
+  document.querySelector(".version-footer").textContent = "v0.1.1";
 
   // Affiche automatiquement l'année courante
   document.getElementById("date").textContent = new Date().getFullYear();
-
-});
+})
 
 /*  Menu au formant mobile (Gestion de la responsivité ) */
 document.addEventListener('DOMContentLoaded', () => {
@@ -51,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }); //menuIcon.textContent = menuIcon.textContent === '✖' ? '☰' : '✖';
 
   //Fermer le menu quand on clique hors du menu
-  document.addEventListener('click', (e) => {
+  document.addEventListener('click', async (e) => {
     // si clic hors navLinks et hors bouton menu
     if (
       navLinks.classList.contains('mobile-menu') &&
@@ -79,3 +65,21 @@ window.addEventListener('scroll', function () {
   }
 });
 
+
+/*  Evenement au préchargement de la page */
+/*
+document.addEventListener("DOMContentLoaded", () => {
+  const preloader = document.getElementById("prechargement");
+  const content = document.querySelector(".home-bloc");
+
+  // Masquer le préchargeur avec effet fondu
+  preloader.classList.add("fade-out");
+
+  // Quand l'animation du préchargeur est terminée
+  preloader.addEventListener('load', () => {
+    preloader.style.display = 'none';
+    // Afficher le contenu avec fondu
+    content.classList.add("visible");
+  });
+
+});*/

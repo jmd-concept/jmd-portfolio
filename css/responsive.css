@@ -14,7 +14,6 @@
     .navbar .logo {
         max-width: 110px;
         top: -18px;
-        z-index: 1000;
     }
 
     .nav-list {
@@ -23,23 +22,23 @@
         position: fixed;
         top: 0;
         right: 0;
-        width: 60%;
+        width: 50%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         list-style: none;
-        background-color: #000000d4;
+        background-color: #000000e6;
         backdrop-filter: blur(250px);
 
-        /* Caché hors "cran par défaut */
+        /* On cache le navbar hors l'écran par défaut */
         transform: translateX(100%);
         transition: transform 0.5s ease-in-out;
         z-index: 1000;
     }
 
     .nav-list.mobile-menu {
-        /* Fait apparaitre le menu*/
+        /* Fait apparaitre le menu */
         transform: translateX(0);
     }
 
@@ -54,7 +53,7 @@
 
     .nav-list li a {
         padding: 2px;
-        font-size: 1.1em;
+        font-size: 1.2em;
         margin-top: 1.2em;
         margin-left: 5em;
     }
@@ -66,13 +65,13 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-top: 30%
+        margin-top: 45%
     }
 
     .nav-list .lien-media a {
         padding: 0px;
         margin: 20px;
-        font-size: 1.1em;
+        font-size: 1.4em;
         margin-top: 5em;
     }
 
@@ -87,15 +86,15 @@
 
     .navbar.scroller .nav-list li a {
         padding: 2px;
-        font-size: 1.1em;
-        margin-top: 1.2em;
+        font-size: 1.2em;
+        margin-top: 1.1em;
         margin-left: 5em;
     }
 
     .navbar.scroller .nav-list .lien-media a {
         padding: 0px;
         margin: 20px;
-        font-size: 1.1em;
+        font-size: 1.4em;
         margin-top: 5em;
     }
 
@@ -106,174 +105,174 @@
     }
 
     .intro {
-        margin: 2em;
-        margin-top: -25em;
-        font-size: 1.3rem;
-        transition: all 1s ease;
-    }
-
-    .intro p {
-        font-size: 16px;
-        z-index: 100;
+        margin-top: -38em;
     }
 
     .intro .slogan {
-        margin-top: 0.1em;
+        padding: 2px;
+        font-size: 25px;
+    }
+
+    .intro .slogan span {
+        font-size: 48px;
     }
 
     .bloc-btn {
-        position: absolute;
-        top: 50%;
-        left: 40%;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        top: 45%;
+        left: 26%;
     }
 
     .btn {
-        padding: 15px 18px;
-        margin-top: 20px;
-        margin-left: 2em;
-        z-index: 999;
+        padding: 15px 30px;
+        margin-top: 10px;
     }
 
     #home img {
-        margin: auto;
-        position: absolute;
-        bottom: 5px;
-        right: 30%;
-        width: 325px;
-        height: 325px;
-        border-radius: 50%;
-        border: 2px #2e2e2d29 Solid;
+        width: 320px;
+        height: 320px;
     }
 
     /* About */
     #about {
-        height: 100%;
-    }
-
-    .about-bloc {
-        padding: 30px;
-        width: 90%;
-    }
-
-    .download {
-        margin-left: 38%;
-    }
-
-    /* Blog */
-    #blog {
         padding: 0;
         margin: 0;
         height: 100%;
-        margin-bottom: 2em;
     }
 
-    #blog h2 {
-        margin-top: 2em;
-    }
-
-    .blog-list {
-        display: flex;
+    .about-container {
         flex-direction: row;
-        justify-content: space-around;
         flex-wrap: wrap;
-        gap: 10px;
     }
 
-    .blog-item {
-        width: 400px;
+    .about-item {
+        width: 86%;
     }
-
-    .projet {
-        width: 762px;
-        height: 425px;
-        margin-top: 1em;
-    }
-
-    .projet img {
-        width: 100%;
-        height: 250px;
-    }
-
 
     /* Service */
     #service {
         padding: 0;
         margin: 0;
         height: 100%;
-        margin-bottom: 2%;
-    }
-
-    #service h2 {
-        margin-top: 1em;
+        margin-bottom: 5em;
     }
 
     .service-item {
-        width: 720px;
+        width: 75%;
         height: auto;
         margin: 2%;
-        padding: 30px;
+        padding: 0;
         justify-content: space-around;
     }
 
-    .service-item:hover {
-        transform: scale(1.1);
+    /* Blog */
+    #blog {
+        padding: 0;
+        margin: 0;
+        border-bottom: 5%;
     }
 
-    .service-item .formation-image {
-        width: 8vh;
-        border-radius: 105px;
-        margin-top: 0.1em;
+    #blog h1 {
+        margin: 15% 0% 1%;
     }
 
+    #blog p {
+        margin: 5% 0% 8%;
+    }
+
+    #blog .gallery {
+        gap: 25px;
+    }
+
+    .gallery .gallery-item {
+        width: 40%;
+    }
+
+    .gallery .gallery-item:hover {
+        border: 1px solid #424242;
+    }
+
+    .gallery-item img {
+        height: 60%;
+    }
+
+    .gallery-item i {
+        margin: 2%;
+        font-size: 20px;
+    }
+
+    .gallery-item .desc {
+        padding: 15px;
+    }
+
+    /* Equipe */
+    #equipe {
+        padding: 0;
+        margin: 0;
+        border-bottom: 5%;
+        background-color: rgba(244, 244, 244, 0.558);
+    }
+
+    .equipe-container {
+        gap: 50px;
+    }
+
+    .equipe-item {
+        width: 30%;
+        margin: 0.1%;
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+    .equipe-item img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .equipe-item .identite {
+        margin: 12%;
+    }
+
+    .equipe-item .equipe-lien-media a {
+        text-decoration: none;
+        color: rgb(27, 13, 4);
+        margin: 2%;
+        font-size: 20px;
+    }
+
+    #equipe .box-under {
+        margin-top: 5%;
+    }
 
     /* Contact */
     #contact {
         height: 100%;
         padding: 0;
         margin: 10;
-        margin-bottom: 10%;
+        margin-bottom: 1%;
     }
 
-    #contact h2 {
-        margin: 2.5em;
+    #contact h1 {
+        margin: 5em 0em 0.1em;
     }
 
     .contact-list {
-        display: block;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
-        gap: 40px;
-        transition: all 1s ease-in;
+        align-items: center;
+        margin-bottom: 5%;
     }
 
     .contact-list .contact-item-1 {
-        width: 95%;
+        width: 80%;
     }
 
     .lien-media-contact {
-        display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
         transition: all 1s ease;
     }
 
-    .contact-item h3 {
-        margin: 1em 0em 0em;
-    }
-
-    .contact-item a {
-        margin: 15px;
-    }
-
-    .contact-item a i {
-        margin: 5px;
-    }
-
-    .contact-item iframe {
-        width: 100%;
+    .contact-list .contact-item {
+        width: 80%;
     }
 
     /* Footer */
@@ -283,9 +282,7 @@
     }
 
     .retour-entete {
-        position: relative;
-        top: -80px;
-        color: white;
+        top: -25px;
     }
 
     .retour-entete a {
@@ -293,121 +290,85 @@
     }
 
     .copy {
-        font-size: 12px;
+        font-size: 13px;
     }
 
 }
 
 /* Small <= 768px */
 @media screen and (max-width: 768px) {
-    .navbar .menu {
-        display: block;
-        /* montre le bouton hamburger */
-        cursor: pointer;
-        z-index: 1100;
+
+    /*Home*/
+    .intro .slogan {
+        padding: 2px;
+        font-size: 25px;
     }
 
-    .nav-list {
-        display: flex;
-        /* vertical */
-    }
-
-    /* Home */
-    .intro {
-        margin: 2em;
-        margin-top: -14.5em;
-        font-size: 1.1rem;
+    .intro .slogan span {
+        font-size: 48px;
     }
 
     .bloc-btn {
-        top: 60%;
+        top: 50%;
+        left: 20%;
     }
 
     .btn {
-        margin-left: 0%;
+        padding: 10px 15px;
+        margin-top: 5px;
+        font-size: 14px;
     }
 
     #home img {
-        right: 25%;
-        width: 235px;
-        height: 235px;
+        width: 250px;
+        height: 250px;
     }
-
-    /* About */
-    #about {
-        margin: 0;
-    }
-
-    .about-bloc {
-        padding: 15px;
-        width: 80%;
-    }
-
-    #about h2 {
-        margin-top: 0.5em;
-    }
-
-    #about h3 {
-        max-width: 200px;
-    }
-
-    .download {
-        max-width: 200px;
-        margin-left: 25%;
-    }
-
-    /* Blog */
-    #blog {
-        padding: 0;
-        margin: 0;
-        margin-bottom: 5%;
-    }
-
-    .blog-list {
-        gap: 12px;
-        padding: 0px;
-    }
-
-    .blog-item {
-        max-width: 470px;
-        margin-top: 0.9em;
-    }
-
 
     /* Service */
-    #service h2 {
-        margin-top: 0.5em;
+    #service {
+        margin: 0;
+        padding: 0;
     }
 
     .service-item {
         width: 450px;
-        margin: 2%;
-        padding: 35px;
     }
 
-    .service-item .formation-image {
-        width: 7vh;
+    /* Blog */
+    #blog .gallery {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
+    .gallery .gallery-item {
+        width: 92%;
+        height: 925px;
+    }
+
+    .gallery-item img {
+        height: 86%;
+    }
+
+    /* Equipe */
+    .equipe-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .equipe-item img {
+        width: 150px;
+        height: 150px;
+    }
 
     /* Contact */
-    #contact {
-        padding: 0;
-        margin: 10;
-        height: 100%;
-        margin-bottom: 10%;
-    }
-
-    #contact h2 {
-        margin: 2em;
-    }
-
-    .contact-list {
-        gap: 20px;
-    }
-
     .contact-list .contact-item-1 {
-        width: 460px;
+        width: 85%;
+    }
+
+    .contact-item a {
+        font-size: 13px;
     }
 
     .contact-item a i {
@@ -415,207 +376,81 @@
     }
 
     /* Footer */
-    footer {
-        padding: 0;
-        margin: 0;
-        height: 100%;
-    }
 
     footer>#container {
         flex-direction: column;
-        gap: 10px;
-        padding: 1rem;
+        gap: 35px;
+        padding: 2rem;
     }
 
-    .bloc-1 {
-        padding: 15px;
-        width: 80%;
-        border-right: none;
-        border-bottom: 1px solid rgb(106, 105, 105);
-    }
 
-    .bloc-1 a {
-        margin: 30px;
-        margin-left: 50px;
-    }
-
-    .bloc-2 {
-        padding: 10px;
-        width: 70%;
-    }
-
-    .bloc-2 h4 {
-        margin: 0px 0px 15px -10px;
-    }
-
-    .bloc-2 a {
-        margin: 10px;
+    #container .bloc-2 {
+        text-align: center;
+        transition: all 1s ease;
     }
 
     .retour-entete {
-        top: -350px;
-        left: 45%;
-    }
-
-    .copy {
-        margin: 1rem 0rem 0rem 0rem;
+        position: relative;
+        top: -340px;
+        left: 220px;
+        transition: all 1s ease;
     }
 
 }
-
 
 /* Extra Small <= 576px */
 @media screen and (max-width: 576px) {
 
-    /* Home */
+    /*Home*/
     .intro {
-        font-size: 1.1rem;
-        margin: 0.5rem;
+        margin-top: -25em;
+    }
+
+    .intro .slogan span {
+        font-size: 32px;
     }
 
     .bloc-btn {
-        top: 58%;
-        left: 30%;
-        width: 40%;
-    }
-
-    #home img {
-        right: 25%;
-        width: 250px;
-        height: 250px;
-    }
-
-    /* About */
-    #about {
-        margin: 0;
-        padding: 5px;
-    }
-
-    .about-bloc {
-        margin: 0;
-        padding: 12px;
-    }
-
-    #about h2 {
-        margin-top: 0.2em;
-    }
-
-    .download {
-        margin-left: 16%;
-    }
-
-    /* Blog */
-    .blog-list {
-        gap: 10px;
-    }
-
-    .blog-item {
-        max-width: 340px;
-    }
-
-
-    /* Service */
-    .service-item {
-        width: 340px;
+        left: 4%;
     }
 
     /* Contact */
-    #contact {
-        padding: 0;
-        margin: 0;
-    }
-
-    .contact-list {
-        gap: 10px;
+    .contact-list .contact-item-1 {
+        width: 95%;
     }
 
     /* Footer */
-    footer>#container {
-        gap: 10px;
-        padding: 1rem;
-    }
-
-    .bloc-1 {
-        width: 60%;
-    }
-
-    .bloc-1>p {
-        margin: 0px;
-    }
-
-    .bloc-1 a {
-        margin: 0px;
-    }
-
-    .bloc-2 {
-        width: 40%;
-    }
-
-    .bloc-2 h4 {
-        margin: 0px 0px 10px -6px;
-    }
-
-    .bloc-2 a {
-        margin: 0px;
-    }
-
     .retour-entete {
-        top: -80px;
+        top: -340px;
+        left: 160px;
     }
 
-    .retour-entete a {
-        font-size: 25px;
-    }
-
-    .copy {
-        font-size: 15px;
-    }
 }
 
 /* Ecran orienté */
 
-@media (max-width: 992px) and (orientation: landscape) {
+@media (orientation: landscape) {
     .intro {
         margin-top: -16em;
-        padding: 2em;
-        font-size: 12px;
     }
 
-    .bloc-btn {
-        top: 65%;
-        left: 40%;
-    }
-
-    #home img {
-        bottom: 0px;
-        right: 150px;
-        width: 200px;
-        height: 200px;
-    }
-
-    #about,
-    #service,
-    #blog {
-        padding: 10px;
-        margin: 10px;
-    }
-}
-
-@media (max-width: 768px) and (orientation: landscape) {
-    .intro {
-        margin-top: -16em;
-        padding: 2em;
-        font-size: 12px;
+    .intro .slogan span {
+        font-size: 25px;
     }
 
     .bloc-btn {
         top: 60%;
-        left: 38%;
+        left: 36%;
+    }
+
+    .btn {
+        padding: 10px 10px;
+        margin-top: 5px;
+        font-size: 13px;
     }
 
     #home img {
-        bottom: 0px;
-        right: 80px;
+        right: 10%;
         width: 150px;
         height: 150px;
     }
