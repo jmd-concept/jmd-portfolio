@@ -1,5 +1,9 @@
 /* Medium <= 992px */
 @media screen and (max-width: 992px) {
+    header {
+        height: 200px;
+    }
+
     .navbar {
         padding: 0;
         margin: 0;
@@ -22,7 +26,7 @@
         position: fixed;
         top: 0;
         right: 0;
-        width: 50%;
+        width: 60%;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -70,8 +74,8 @@
 
     .nav-list .lien-media a {
         padding: 0px;
-        margin: 20px;
-        font-size: 1.4em;
+        margin: 14px;
+        font-size: 1.2em;
         margin-top: 5em;
     }
 
@@ -87,14 +91,14 @@
     .navbar.scroller .nav-list li a {
         padding: 2px;
         font-size: 1.2em;
-        margin-top: 1.1em;
+        margin-top: 1.2em;
         margin-left: 5em;
     }
 
     .navbar.scroller .nav-list .lien-media a {
         padding: 0px;
-        margin: 20px;
-        font-size: 1.4em;
+        margin: 14px;
+        font-size: 1.2em;
         margin-top: 5em;
     }
 
@@ -104,32 +108,21 @@
         margin: 0;
     }
 
-    .intro {
-        margin-top: -38em;
+    #home .home-container {
+        gap: 50px;
     }
 
-    .intro .slogan {
-        padding: 2px;
-        font-size: 25px;
+    #home .item .slogan {
+        font-size: 22px;
     }
 
-    .intro .slogan span {
-        font-size: 48px;
+    #home .item .slogan span {
+        font-size: 40px;
     }
 
-    .bloc-btn {
-        top: 45%;
-        left: 26%;
-    }
-
-    .btn {
-        padding: 15px 30px;
-        margin-top: 10px;
-    }
-
-    #home img {
-        width: 320px;
-        height: 320px;
+    .item .btn {
+        width: 200px;
+        font-size: 16px;
     }
 
     /* About */
@@ -145,7 +138,7 @@
     }
 
     .about-item {
-        width: 86%;
+        width: 80%;
     }
 
     /* Service */
@@ -157,10 +150,11 @@
     }
 
     .service-item {
-        width: 75%;
+        width: 85%;
         height: auto;
         margin: 2%;
         padding: 0;
+        margin: 1%;
         justify-content: space-around;
     }
 
@@ -172,11 +166,11 @@
     }
 
     #blog h1 {
-        margin: 15% 0% 1%;
+        margin: 10% 0% 1%;
     }
 
     #blog p {
-        margin: 5% 0% 8%;
+        margin: 5% 0% 5%;
     }
 
     #blog .gallery {
@@ -184,24 +178,20 @@
     }
 
     .gallery .gallery-item {
-        width: 40%;
-    }
-
-    .gallery .gallery-item:hover {
-        border: 1px solid #424242;
+        width: 45%;
     }
 
     .gallery-item img {
-        height: 60%;
+        height: 58%;
     }
 
     .gallery-item i {
-        margin: 2%;
-        font-size: 20px;
+        margin: 1%;
+        font-size: 25px;
     }
 
     .gallery-item .desc {
-        padding: 15px;
+        padding: 18px;
     }
 
     /* Equipe */
@@ -224,8 +214,8 @@
     }
 
     .equipe-item img {
-        width: 100px;
-        height: 100px;
+        width: 180px;
+        height: 180px;
     }
 
     .equipe-item .identite {
@@ -247,32 +237,46 @@
     #contact {
         height: 100%;
         padding: 0;
-        margin: 10;
+        margin: 2%;
         margin-bottom: 1%;
-    }
-
-    #contact h1 {
-        margin: 5em 0em 0.1em;
     }
 
     .contact-list {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 5%;
-    }
-
-    .contact-list .contact-item-1 {
-        width: 80%;
-    }
-
-    .lien-media-contact {
-        flex-direction: row;
-        transition: all 1s ease;
+        gap: 25px;
+        margin: 2%;
     }
 
     .contact-list .contact-item {
-        width: 80%;
+        width: 85%;
+    }
+
+    .contact-list .contact-item-1 {
+        flex-direction: row;
+    }
+
+    .contact-item-1 .item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .contact-item .item a {
+        font-size: 18px;
+        margin: 0px;
+    }
+
+    .contact-item .item a i {
+        font-size: 28px;
+        margin: 18px;
+    }
+
+    .contact-item iframe {
+        width: 100%;
+        height: 100%;
     }
 
     /* Footer */
@@ -299,39 +303,29 @@
 @media screen and (max-width: 768px) {
 
     /*Home*/
-    .intro .slogan {
+    #home .home-container {
+        gap: 30px;
+    }
+
+    #home .item .slogan {
         padding: 2px;
-        font-size: 25px;
+        font-size: 18px;
     }
 
-    .intro .slogan span {
-        font-size: 48px;
+    #home .item .slogan span {
+        font-size: 30px;
     }
 
-    .bloc-btn {
-        top: 50%;
-        left: 20%;
-    }
-
-    .btn {
-        padding: 10px 15px;
-        margin-top: 5px;
+    .item .btn {
+        padding: 5px 8px 8px;
         font-size: 14px;
     }
 
-    #home img {
-        width: 250px;
-        height: 250px;
-    }
-
-    /* Service */
-    #service {
-        margin: 0;
-        padding: 0;
-    }
-
-    .service-item {
-        width: 450px;
+    #home .item img {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        margin-left: -25%;
     }
 
     /* Blog */
@@ -342,12 +336,12 @@
     }
 
     .gallery .gallery-item {
-        width: 92%;
-        height: 925px;
+        width: 88%;
+        height: 620px;
     }
 
     .gallery-item img {
-        height: 86%;
+        height: 80%;
     }
 
     /* Equipe */
@@ -357,26 +351,68 @@
         align-items: center;
     }
 
+    .equipe-item {
+        width: 80%;
+    }
+
     .equipe-item img {
         width: 150px;
         height: 150px;
     }
 
+    .equipe-item .identite {
+        text-align: center;
+        margin: 1px;
+    }
+
     /* Contact */
-    .contact-list .contact-item-1 {
-        width: 85%;
+    #contact {
+        height: 100%;
+        padding: 0;
+        margin: 10;
+        margin-bottom: 1%;
     }
 
-    .contact-item a {
-        font-size: 13px;
+    .contact-list {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        margin: 2%;
     }
 
-    .contact-item a i {
-        margin: 5px;
+    .contact-list .contact-item {
+        padding: 2%;
+        height: 100%;
+        width: 95%;
+    }
+
+    .contact-item-1 .item {
+        padding: 0.1%;
+        flex-direction: column;
+    }
+
+    .contact-item .item a {
+        font-size: 16px;
+        margin: 2px;
+    }
+
+    .contact-item .item a i {
+        margin: 2px;
+    }
+
+    .contact-list .contact-item-last {
+        height: 400px;
+        width: 95%;
+    }
+
+    .contact-item iframe {
+        height: 100%;
+        width: 100%;
     }
 
     /* Footer */
-
     footer>#container {
         flex-direction: column;
         gap: 35px;
@@ -415,13 +451,19 @@
     }
 
     /* Contact */
-    .contact-list .contact-item-1 {
-        width: 95%;
+    .contact-list {
+        margin: 3%;
+    }
+
+    .contact-item-1 .item {
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
     }
 
     /* Footer */
     .retour-entete {
-        top: -340px;
+        top: -300px;
         left: 160px;
     }
 
@@ -430,7 +472,7 @@
 /* Ecran orienté */
 
 @media (max-width: 992px) and (orientation: landscape) {
-    .bloc-btn {
+    .item .bloc-btn {
         top: 50%;
     }
 
