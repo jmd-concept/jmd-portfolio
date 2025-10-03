@@ -1,7 +1,7 @@
 /* Medium <= 992px */
 @media screen and (max-width: 992px) {
     header {
-        height: 160px;
+        height: 100px;
     }
 
     .navbar {
