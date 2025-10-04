@@ -65,7 +65,6 @@ window.addEventListener('scroll', function () {
   }
 });
 
-
 /*  Evenement au préchargement de la page */
 /*
 document.addEventListener("DOMContentLoaded", () => {
