@@ -476,6 +476,13 @@
 
 /* Ecran orienté */
 @media screen and (orientation: landscape) {
+    .home-bloc {
+        height: auto;
+    }
+
+    header {
+        margin-bottom: 0%;
+    }
 
     /* Navbar*/
     .nav-list li a {
