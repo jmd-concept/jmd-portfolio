@@ -3,8 +3,8 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   // Affiche la version
-  document.querySelector(".version").textContent = "v0.1.1";
-  document.querySelector(".version-footer").textContent = "v0.1.1";
+  document.querySelector(".version").textContent = "v0.1.3";
+  document.querySelector(".version-footer").textContent = "v0.1.3";
 
   // Affiche automatiquement l'année courante
   document.getElementById("date").textContent = new Date().getFullYear();
