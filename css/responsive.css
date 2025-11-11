@@ -1,9 +1,5 @@
 /* Medium <= 992px */
 @media screen and (max-width: 992px) {
-    header {
-        height: 100px;
-    }
-
     .navbar {
         padding: 0;
         margin: 0;
@@ -15,15 +11,17 @@
         overflow: hidden;
     }*/
 
-    .navbar .logo {
-        max-width: 110px;
-        top: -18px;
+    .logo {
+        top: 4px;
+        left: 35px;
+        width: 80px;
+        height: 50px;
     }
 
     .nav-list {
+        position: fixed;
         margin: 0;
         padding: 0;
-        position: fixed;
         top: 0;
         right: 0;
         width: 60%;
@@ -33,7 +31,7 @@
         justify-content: center;
         align-items: center;
         list-style: none;
-        background-color: #000000e6;
+        background-color: rgb(3, 149, 207);
         backdrop-filter: blur(250px);
 
         /* On cache le navbar hors l'écran par défaut */
@@ -53,7 +51,7 @@
     }
 
     .nav-list li {
-        padding: 5px;
+        padding: 10px;
     }
 
     .nav-list li a {
@@ -71,7 +69,7 @@
         flex-direction: row;
         justify-content: center;
         margin-top: 25%;
-        border-bottom: 1px solid rgba(33, 31, 31, 0.5);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         width: 80%;
     }
 
@@ -90,11 +88,6 @@
         height: 7%;
     }
 
-    .navbar.scroller .logo {
-        top: -30px;
-        max-width: 140px;
-    }
-
     .navbar.scroller .nav-list li a {
         padding: 2px;
         font-size: 1.2em;
@@ -110,26 +103,22 @@
     }
 
     /*Home*/
-    #home {
-        padding: 0;
-        margin: 0;
-    }
-
-    #home .home-container {
-        gap: 50px;
-    }
-
-    #home .item .slogan {
-        font-size: 22px;
-    }
-
-    #home .item .slogan span {
+    #home .item h1 {
         font-size: 40px;
     }
 
+    #home .item .slogan {
+        font-size: 18px;
+    }
+
     .item .btn {
-        width: 200px;
-        font-size: 16px;
+        width: 190px;
+        font-size: 15px;
+    }
+
+    #home .item img {
+        margin-top: 15%;
+        margin-left: -35%;
     }
 
     /* About */
@@ -163,6 +152,10 @@
         padding: 0;
         margin: 1%;
         justify-content: space-around;
+    }
+
+    .service-item img {
+        height: 240px;
     }
 
     /* Blog */
@@ -206,7 +199,6 @@
         padding: 0;
         margin: 0;
         border-bottom: 5%;
-        background-color: rgba(244, 244, 244, 0.558);
     }
 
     .equipe-container {
@@ -237,7 +229,7 @@
     }
 
     #equipe .box-under {
-        margin-top: 5%;
+        width: 45%;
     }
 
     /* Contact */
@@ -309,32 +301,6 @@
 /* Small <= 768px */
 @media screen and (max-width: 768px) {
 
-    /*Home*/
-    #home .home-container {
-        gap: 35px;
-    }
-
-    #home .item .slogan {
-        padding: 2px;
-        font-size: 18px;
-    }
-
-    #home .item .slogan span {
-        font-size: 30px;
-    }
-
-    .item .btn {
-        padding: 5px 6px 6px;
-        font-size: 14px;
-    }
-
-    #home .item img {
-        margin-top: 15%;
-        width: 300px;
-        height: 300px;
-        margin-left: -30%;
-    }
-
     /* Blog */
     #blog .gallery {
         flex-direction: column;
@@ -344,11 +310,11 @@
 
     .gallery .gallery-item {
         width: 88%;
-        height: 620px;
+        height: auto;
     }
 
     .gallery-item img {
-        height: 80%;
+        height: 75%;
     }
 
     /* Equipe */
@@ -370,6 +336,15 @@
     .equipe-item .identite {
         text-align: center;
         margin: 1px;
+    }
+
+    #equipe .box-under {
+        width: 88%;
+        margin-top: 18%;
+    }
+
+    .box-under p {
+        text-align: center;
     }
 
     /* Contact */
@@ -443,15 +418,25 @@
 
 /* Extra Small <= 576px */
 @media screen and (max-width: 576px) {
-
     /*Home*/
-    #home .item .slogan span {
+    #home .item h1 {
+        margin: 15% 0% 2%;
         font-size: 28px;
+    }
+
+    #home .item .slogan {
+        font-size: 15px;
     }
 
     #home .item img {
         width: 180px;
         height: 180px;
+    }
+
+    .item .btn {
+        margin: 4px;
+        width: 180px;
+        font-size: 13px;
     }
 
     /* Contact */
@@ -469,7 +454,7 @@
     /* Footer */
     .retour-entete {
         top: -300px;
-        left: 160px;
+        left: 180px;
     }
 
 }
