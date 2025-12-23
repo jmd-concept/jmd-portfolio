@@ -1,4 +1,3 @@
-
 @font-face {
      /*déclaration atte (embarqué)*/
      font-family: font_entet;
@@ -39,9 +38,9 @@ header {
 .navbar {
      position: fixed;
      top: 0;
-     padding: 5px;
+     padding: 18px;
      width: 100%;
-     height: 8.5%;
+     height: 9%;
      display: flex;
      justify-content: end;
      transition: all 0.1s ease-in;
@@ -51,7 +50,7 @@ header {
 
 .logo {
      position: absolute;
-     top: 2px;
+     top: 4px;
      left: 60px;
      width: 80px;
      height: 65px;
@@ -105,8 +104,8 @@ header {
 }
 
 .navbar.scroller {
-     padding: 4px;
-     height: 8.5%;
+     padding: 18px;
+     height: 9%;
      background-color: rgba(4, 167, 232, 0.877);
      border-bottom: 1px solid white;
 }
@@ -150,6 +149,10 @@ header {
      margin: 10% 0% 3%;
      color: rgb(5, 173, 239);
      font-size: 60px;
+     /*  background: url(/assets/jmd/team/merdi.jpg);
+     -webkit-background-clip: text;
+     background-clip: text;
+     color: transparent; */
 }
 
 #home .item .slogan {
@@ -190,7 +193,8 @@ header {
 }
 
 .btn:hover {
-     background-color: rgb(0, 35, 48);;
+     background-color: rgb(0, 35, 48);
+     ;
      transform: scale(1.1);
      transition: 1s;
 }
@@ -527,7 +531,8 @@ header {
      width: 80%;
 }
 
-.item-2  .under-item-1 a, .under-item-2 a {
+.item-2 .under-item-1 a,
+.under-item-2 a {
      padding: 9px;
      text-decoration: none;
      color: white;
