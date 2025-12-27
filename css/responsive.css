@@ -12,15 +12,16 @@
     }*/
 
     .logo {
-        top: 14px;
+        top: 12px;
         left: 35px;
         width: 80px;
-        height: 50px;
+        height: 45px;
     }
 
     .nav-list {
         position: fixed;
         margin: 0;
+        padding: 0;
         padding-top: 14%;
         top: 0;
         right: 0;
@@ -129,7 +130,7 @@
 
     /* About */
     #about {
-        padding: 0;
+        padding-bottom: 2%;
         margin: 0;
         height: 100%;
     }
@@ -152,7 +153,7 @@
     }
 
     .service-item {
-        width: 85%;
+        width: 80%;
         height: auto;
         margin: 2%;
         padding: 0;
@@ -277,15 +278,24 @@
         flex-direction: column;
     }
 
+    .item-btn .btn {
+        width: 200px;
+        font-size: 15px;
+    }
+
     #home .item img {
         margin-top: 12%;
         width: 200px;
         height: 190px;
     }
 
+    #home .item .slogan {
+        font-size: 12px;
+    }
+
     /*Service*/
     .service-item {
-        width: 88%;
+        width: 80%;
     }
 
     /* Blog */
@@ -385,12 +395,12 @@
 
     /*Home*/
     #home .item h1 {
-        margin: 15% 0% 2%;
+        margin: 10% 0% 2%;
         font-size: 28px;
     }
 
     #home .item .slogan {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     #home .item img {
@@ -409,21 +419,15 @@
     /* Contact */
     .contact-list {
         margin: 3%;
+        padding: 2%;
     }
 
     .contact-item-1 .item {
         text-align: start;
         display: flex;
         flex-direction: column;
-        padding: 1%;
+        padding: 4%;
     }
-
-    /* Footer */
-    .retour-entete {
-        top: -300px;
-        left: 180px;
-    }
-
 }
 
 /* Ecran orienté */
