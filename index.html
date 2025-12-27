@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./assets/font-awesome-4.7/css/font-awesome.min.css">
+
+    <!-- Tailwindcss-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
 </head>
 
 <body id="en-tete">
@@ -32,7 +36,7 @@
                         title="Logo de JMD Concept">
                 </a>
 
-                <ul class="nav-list">
+                <ul class="nav-list bg-sky-900 sm:grid-cols-1 sm:items-center xl:bg-transparent">
                     <li class="active">
                         <a href="#en-tete">
                             <i class="fa fa-home" aria-hidden="true" style="font-size: 1.8em;"></i>
@@ -41,24 +45,24 @@
                     <li><a href="#service">Services</a></li>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#equipe">Êquipe JMD</a></li>
-                    <li><a href="#contact">Contactez-nous</a></li>
+                    <li><a href="#contact">Contact</a></li>
 
                     <li class="lien-media">
-                        <a href="https://www.facebook.com/profile.php?id=61581381020725">
+                        <a href="https://www.facebook.com/profile.php?id=61581381020725"
+                            class="bg-blue-600 text-white p-2! rounded-full">
                             <i class="fa fa-facebook" aria-hidden="true" style="color: rgb(255, 255, 255);"></i>
                         </a>
-                        <a href="https://wa.me/243824499881">
-                            <i class="fa fa-whatsapp" aria-hidden="true" style="color: rgb(255, 255, 255);"></i>
-                        </a>
-                        <a href="https://www.instagram.com/invites/contact/?igsh=1ov6g05h5lnxk&utm_content=zjmjfv7">
+                        <a href="https://www.instagram.com/invites/contact/?igsh=1ov6g05h5lnxk&utm_content=zjmjfv7"
+                            class="bg-pink-600 text-white p-2! rounded-full">
                             <i class="fa fa-instagram" aria-hidden="true" style=" color: rgb(255, 255, 255);"></i>
                         </a>
-                        <a href="mailto:jmdconcept3@gmail.com">
-                            <i class="fa fa-envelope-o" aria-hidden="true" style="color: rgb(250, 250, 250);"></i>
+                        <a href="https://wa.me/243824499881" class="bg-green-600 text-white p-2! rounded-full">
+                            <i class="fa fa-whatsapp" aria-hidden="true" style="color: rgb(255, 255, 255);"></i>
                         </a>
                     </li>
                     <li class="lien-media">
-                        <p class="version" style="color: rgb(164, 162, 162); text-align: center; font-size: 12px;"></p>
+                        <p class="version"
+                            style="color: rgba(164, 162, 162, 0.466); text-align: center; font-size: 12px;"></p>
                     </li>
                 </ul>
 
@@ -75,18 +79,21 @@
             <div class="home-container">
                 <div class="item">
                     <h1>
-                        Bienvenue à l'agence JMD Concept <br /><br />
-                        <span class="slogan">JMD Concept - L'innovation au service de votre visibilité</span>
+                        Bienvenue à l'agence JMD Concept <br />
                     </h1>
+                    <p class="m-8! text-yellow-50 text-3xl">
+                        L'innovation au service de votre visibilité
+                    </p>
                 </div>
 
-                <div class="item">
+                <div class="item-btn sm:flex-col">
                     <a href="#about" class="btn">
                         <i class="fa fa-user-circle-o" aria-hidden="true" style="font-size: 1.4em;"></i> Qui somme-nous
                     </a>
 
                     <a href="#contact" class="btn">
-                        <i class="fa fa-phone-square" aria-hidden="true" style="font-size: 1.4em;"></i> Contactez-nous
+                        <i class="fa fa-phone-square" aria-hidden="true"
+                            style="font-size: 1.4em; margin-right: 4px;"></i> Contactez-nous
                     </a>
 
                     <!-- <a href="#contact" class="btn">
@@ -98,15 +105,28 @@
                     <img src="./assets/photos/arriere-plan.png" alt="arriere-plan mouve" />
                 </div>
 
+                <div class="absolute bottom-48 left-10 opacity-40 hover:opacity-400 animate-bounce"><a href="#en-tete"
+                        class="p-4! bg-white text-4xl text-white rounded-full">🔵</a></div>
+                <div class="absolute bottom-28 left-20 opacity-40 hover:opacity-400 animate-pulse"><a href="#en-tete"
+                        class="p-4! bg-white text-4xl text-white rounded-full"></a></div>
+                <div class="absolute bottom-26 left-32 opacity-40 hover:opacity-400 animate-bounce"><a href="#en-tete"
+                        class="p-4! bg-white text-4xl text-white rounded-full">🔵</a></div>
             </div>
 
-        </section>
+            <div class="fixed top-140 right-8 opacity-20 hover:opacity-200"><a href="#en-tete"
+                    class="p-2! bg-gray-500 text-5xl text-white rounded-full">↑</a></div>
+
+    </div>
+
+    </section>
     </div>
 
     <!--Section À propos-->
     <section id="about">
-        <br>
-        <h1>PRÉSENTATION</h1>
+
+        <div class="p-4! mb-8! bg-sky-600"></div><br>
+
+        <h1 class="mt-10! mb-12! text-sky-500 text-center font-bold text-4xl">DÉCOUVREZ JMD Concept</h1>
 
         <div class="about-container">
 
@@ -156,97 +176,112 @@
 
     <!--Section Service-->
     <section id="service">
-        <br />
 
-        <h1>NOS SERVICES</h1>
+        <div class="p-6! mb-8! bg-sky-700">
+            <h1 class="mt-6! mb-8! pb-8!  text-white text-center font-bold text-4xl">NOS
+                SERVICES
+            </h1>
 
-        <p class="label">
-            Nous vous proposons nos meilleurs services à un coût abordable et adaptatif <br />
-        </p>
+            <p class="text-2xl text-gray-200 text-center">
+                Nous vous proposons nos meilleurs services à un coût abordable et adaptatif <br />
+            </p>
 
+        </div>
         <br />
 
         <div class="service-list">
-            <div class="service-item">
-                <h3>
-                    Boostage de vos produits sur nos comptes réseaux sociaux
+
+            <div
+                class="w-145 p-2! bg-white rounded-xl border-2 border-white hover:border-sky-100 hover:scale-104 xl:w-140 ">
+                <h3 class="m-5! text-sky-600 text-center font-bold text-2xl">
+                    Boostage de vos produits
                 </h3>
 
-                <div class="lists">
-                    <ul class="liste-service">
+                <div class="ml-6! pr-6! h-50">
+                    <ul class="pl-6! list-disc text-justify">
                         <li>
-                            Service de Boostage pour la promotion de vos produits.
+                            Boostage pour la promotion de vos produits.
                         </li>
-                        <li>Serivice de création de comptes virtuel mobile money</li>
+                        <li>Création de comptes virtuel mobile money</li>
                         <li>Gestion et suivi de vos promotions</li>
                     </ul>
                 </div>
 
-                <img src="./assets/photos/reseaux-sociaux.png" alt="création de visuels et Production" />
+                <div>
+                    <img src="./assets/photos/reseaux-sociaux.png" alt="création de visuels et Production"
+                        class="w-full h-60 object-cover" />
+                </div>
             </div>
 
-            <div class="service-item">
-                <h3>
-                    Création de contenus Professionnelle sur mésure
+            <div
+                class="w-145 p-2! bg-white rounded-xl border-2 border-white hover:border-sky-100 hover:scale-104 xl:w-140">
+                <h3 class="m-5! text-sky-600 text-center font-bold text-2xl">
+                    Création de contenus Professionnelle
                 </h3>
 
-                <div class="lists">
-                    <ul class="liste-service">
+                <div class="ml-6! pr-6! h-50">
+                    <ul class="pl-6! list-disc text-justify word-wrap">
+                        <li>Visuels publicitaires (affiches, flyers, bannières, cartes de visite)</li>
+                        <li>Production audiovisuelle (vidéos, teasers, podcasts)</li>
                         <li>
                             Gestion et animation des réseaux sociaux (Facebook, Instagram, TikTok...)
                         </li>
-                        <li>Conception de visuels publicitaires (affiches, flyers, bannières, cartes de visite)</li>
-                        <li>Production audiovisuelle (vidéos, teasers, podcasts)</li>
-                    </ul>
-                </div>
-
-                <img src="./assets/photos/contenu.png" alt="Image Reseaux sociaux" />
-            </div>
-
-            <div class="service-item">
-                <h3>
-                    Conception de sites web et applications, & intégration IA
-                </h3>
-
-                <div class="lists">
-                    <ul class="list-service">
-                        <li>Conception de sites vitrines, blogs, e-commerce, SPA, MPA...</li>
-                        <li>Portfolio profesionnel</li>
-                        <li>Conception d’applications mobiles (Android)</li>
-                        <li>Refonte et optimisation de sites existants et Maintenance</li>
-                        <li>Création de ChatBot</li>
                     </ul>
                 </div>
 
                 <div>
-                    <img src="./assets/photos/site-web.png" alt="Conception site web" />
+                    <img src="./assets/photos/contenu.png" alt="Image Reseaux sociaux"
+                        class="w-full h-60 object-cover" />
                 </div>
             </div>
 
-            <div class="service-item">
-                <h3>
-                    Conception de base de données et BI professionnelle
+            <div
+                class="w-145 p-2! bg-white rounded-xl border-2 border-white hover:border-sky-100 hover:scale-104 xl:w-140">
+                <h3 class="m-5! text-sky-600 text-center font-bold text-2xl">
+                    Conception de sites web et applications, & intégration IA
                 </h3>
 
-                <div class="lists">
-                    <ul class="liste-service">
-                        <li>Modélisation et conception de bases de données</li>
-                        <li>Conception d'entrepôt de données et processus ETL</li>
-                        <li>Analyse et visualisation des données pour la prise de décision</li>
-                        <li>Solutions pour la sécurisation et sauvegarde des informations</li>
+                <div class="ml-6! pr-6! h-42">
+                    <ul class="pl-10! list-disc text-justify word-wrap">
+                        <li>Sites vitrines, blogs, e-commerce, SPA, MPA...</li>
+                        <li>Portfolio profesionnel & Création de ChatBot</li>
+                        <li>Applications mobiles (Android)</li>
+                        <li>Optimisation de sites existants et Maintenance</li>
                     </ul>
                 </div>
 
-                <img src="./assets/photos/database.jpg" alt="Image base de données" />
+                <div>
+                    <img src="./assets/photos/site-web.png" alt="Conception site web"
+                        class="w-full h-60 object-cover" />
+                </div>
             </div>
 
-            <div class="service-item">
-                <h3>
+            <div
+                class="w-145 p-2! bg-white rounded-xl border-2 border-white hover:border-sky-100 hover:scale-104 xl:w-140">
+                <h3 class="m-5! text-sky-600 text-center font-bold text-2xl">
+                    Conception de base de données et BI
+                </h3>
+
+                <div class="ml-6! pr-6! h-48">
+                    <ul class="pl-6! list-disc text-justify">
+                        <li>Modélisation et conception de bases de données</li>
+                        <li>Conception d'entrepôt de données et processus ETL</li>
+                        <li>Analyse et visualisation des données pour la prise de décision</li>
+                        <li>Sécurisation et sauvegarde des données</li>
+                    </ul>
+                </div>
+
+                <img src="./assets/photos/database.jpg" alt="Image base de données" class="w-full h-60 object-cover" />
+            </div>
+
+            <div
+                class="w-145 p-2! bg-white rounded-xl border-2 border-white hover:border-sky-100 hover:scale-104 xl:w-140">
+                <h3 class="m-5! text-sky-600 text-center font-bold text-2xl">
                     Nous proposons plusieurs formations dans les domaines variés
                 </h3>
 
-                <div class="lists">
-                    <ul class="liste-service">
+                <div class="ml-6! pr-6! h-40">
+                    <ul class="pl-6! list-disc text-justify">
                         <li>Création de contenus profesionnel</li>
                         <li>Conception de sites et applications web</li>
                         <li>Modelisation et conception de base de données</li>
@@ -254,31 +289,37 @@
                     </ul>
                 </div>
 
-                <img src="./assets/photos/formation.jpg" alt="Formation" />
+                <div>
+                    <img src="./assets/photos/formation.jpg" alt="Formation" class="w-full h-60 object-cover" />
+                </div>
             </div>
 
-            <div class="service-item">
-                <h3>
+            <div
+                class="w-145 p-2! bg-white rounded-xl border-2 border-white hover:border-sky-100 hover:scale-104 xl:w-140">
+                <h3 class="m-5! text-sky-600 text-center font-bold text-2xl">
                     Imprimerie moderne pour vos impression
                 </h3>
 
-                <div class="lists">
-                    <p style="text-align: center;;">
+                <div class="h-50">
+                    <p style="text-align: center;">
                         <i class="fa fa-info-circle" aria-hidden="true" style="font-size: 80px; color: red"></i><br />
                         Á bientôt...
                     </p>
                 </div>
 
-                <img src="./assets/photos/printer.jpg" alt="Photo impremente" />
+                <div>
+                    <img src="./assets/photos/printer.jpg" alt="Photo impremente" class="w-full h-60 object-cover" />
+                </div>
             </div>
+
         </div>
     </section>
 
     <!-- Blog -->
-    <section id="blog">
+    <section id="blog" class="mt-8!">
         <br />
-        <h1>
-            NOS PROMOTIONS
+        <h1 class="mt-10! mb-12! text-sky-500 text-center font-bold text-4xl">
+            PROMOTIONS
         </h1>
 
         <p>Nous vous offront une réduction à plus de <span style="color: red; font-size: 20px;"> -30%</span>
@@ -342,160 +383,225 @@
     </section>
 
     <!--Section Equipe-->
-    <section id="equipe">
+    <section id="equipe" class="m-auto! mb-8! pb-2!">
 
-        <br />
-        <h1>NOTRE ÉQUIPE PRINCIPAL</h1>
+        <div class="mt-8!"></div>
 
-        <div class="equipe-container">
+        <div class="px-8! py-40! bg-sky-900 border-0 sm:py-32">
+            <div class="m-auto! grid grid-cols-1 max-w-7xl gap-20 xl:grid-cols-3 lg:px-8">
 
-            <div class="equipe-item">
-                <img src="./assets/jmd/team/merdi.jpg" alt="merdi bangongo dev" />
-                <div class="identite">
-                    <h2>Merdi BANGONGO</h2> &nbsp;
-                    <p>Développeur Informatique de formation</p>
+                <div class="max-w-xl flex flex-col justify-center md:m-auto! xl:justify-around ">
+                    <h2 class="pb-8! text-4xl! font-semibold tracking-tight text-pretty text-white sm:text-4xl">
+                        DÉCOUVREZ NOTRE ÉQUIPE DIRIGEANTE
+                    </h2>
+                    <p class="mt-8! text-lg/8 text-white text-xl!">
+                        Nous sommes un groupe dynamique et passionné par son métier, qui place l’excellence au service
+                        de
+                        ses clients au cœur de
+                        ses priorités. <br>
+                        Tous reunis pour vous offrir un service de qualité. <br>
+                        Nous utilisons les derniers technologie pour vous satisfaire
+                    </p>
+
+                    <p class="mt-8! text-gray-400">
+                        <i class="fa fa-desktop" aria-hidden="true"
+                            style="color: rgba(252, 236, 236, 0.894); font-size: 50px; margin-bottom: 15px;"></i> <br>
+                        Tous reunis pour vous offrir un service de qualité <br />
+                    </p>
                 </div>
 
-                &nbsp;
-                <div class="equipe-lien-media">
-                    <a href="https://www.facebook.com/profile.php?id=61581381020725">
-                        <i class="fa fa-facebook" aria-hidden="true" style="color: red;"></i>
-                    </a>
-                    <a href="https://wa.me/243824499881">
-                        <i class="fa fa-whatsapp" aria-hidden="true" style="color: red;"></i>
-                    </a>
-                    <a href="mailto:merdibangongo@gmail.com">
-                        <i class="fa fa-envelope-o" aria-hidden="true" style="color: red;"></i>
-                    </a>
-                </div>
-            </div>
+                <ul role="list"
+                    class="w-xl grid gap-x-12! gap-y-12 sm:gap-y-16 xl:col-span-2 md:m-auto! md:grid-cols-1 md:w-2xl xl:gap-x-1 xl:grid-cols-2 xl:w-4xl lg:grid-cols-2">
+                    <li>
+                        <div class="flex flex-col items-center xl:flex-row">
+                            <img src="./assets/jmd/team/merdi.jpg" alt="merdi bangongo dev"
+                                class="size-46 rounded-full outline-1 -outline-offset-1 outline-white/10 bg-white md:size-36" />
 
-            <div class="equipe-item">
-                <img src="./assets/jmd/team/josue.png" alt="Josue edjuku" />
-                <div class="identite">
-                    <h2>Josué EDJUKU</h2> &nbsp;
-                    <p>Designer Graphiste et Montage vidéo</p>
-                </div>
+                            <div class="flex flex-col items-center">
+                                <h2 class="pt-6! pb-4! text-2xl! font-semibold tracking-tight text-white md:pt-0!">Merdi
+                                    BANGONGO
+                                </h2>
+                                <!--   <p class="pb-4! text-sm/12 text-xl! font-semibold text-indigo-300">Développeur
+                                    Informatique
+                                    de
+                                    formation
+                                </p> -->
+                                <p class="pb-4! text-sm/12 text-xl! font-semibold text-indigo-300">
+                                    Responsable Innovantion & Systèmes Numériques
+                                </p>
 
-                &nbsp;
-                <div class="equipe-lien-media">
-                    <a href="https://www.facebook.com/profile.php?id=61581381020725">
-                        <i class="fa fa-facebook" aria-hidden="true" style="color: red;"></i>
-                    </a>
-                    <a href="https://wa.me/243859118386">
-                        <i class="fa fa-whatsapp" aria-hidden="true" style="color: red;"></i>
-                    </a>
-                    <a href="mailto:josueedjuku98@gmail.com">
-                        <i class="fa fa-envelope-o" aria-hidden="true" style="color: red;"></i>
-                    </a>
-                </div>
-            </div>
+                                <div class="flex gap-6 text-white text-2xl!">
+                                    <a href="https://www.facebook.com/profile.php?id=61581381020725">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://wa.me/243824499881">
+                                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="mailto:merdibangongo@gmail.com">
+                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex flex-col items-center gap-x-14 xl:gap-x-1 xl:flex-row">
+                            <img src="./assets/jmd/team/josue.png" alt="Josue edjuku"
+                                class="size-46 rounded-full outline-1 -outline-offset-1 outline-white/10 bg-white md:size-36" />
 
-            <div class="equipe-item">
-                <img src="./assets/jmd/team/dany.png" alt="Dany Banani" />
-                <div class="identite">
-                    <h2>Dany BANANI</h2> &nbsp;
-                    <p>Développeur Informatique de formation</p>
-                </div>
+                            <div class="flex flex-col items-center">
+                                <h2 class="pt-6! pb-4! text-2xl! font-semibold tracking-tight text-white md:pt-0!">Josué
+                                    EDJUKU
+                                </h2>
+                                <!--  <p class="pb-4! text-sm/12 text-xl! font-semibold text-indigo-300">
+                                    Designer
+                                    Graphiste et Montage vidéo
+                                    de
+                                    formation
+                                </p> -->
 
-                &nbsp;
-                <div class="equipe-lien-media">
-                    <a href="https://www.facebook.com/profile.php?id=61581381020725">
-                        <i class="fa fa-facebook" aria-hidden="true" style="color: red;"></i>
-                    </a>
-                    <a href="https://wa.me/24382061748">
-                        <i class="fa fa-whatsapp" aria-hidden="true" style="color: red;"></i>
-                    </a>
-                    <a href="mailto:jmdconcept3@gmail.com">
-                        <i class="fa fa-envelope-o" aria-hidden="true" style="color: red;"></i>
-                    </a>
-                </div>
-            </div>
+                                <p class="pb-4! text-sm/12 text-xl! font-semibold text-indigo-300">
+                                    Responsable Stratégique & Développement
+                                </p>
 
-            <div class="equipe-item">
-                <img src="./assets/jmd/team/willy.png" alt="Willy MWAMUKASA" />
-                <div class="identite">
-                    <h2>Willy MWAMUKASA</h2> &nbsp;
-                    <p>Communicologue et Marketing digitale</p>
-                </div>
+                                <div class="flex gap-6 text-white text-2xl!">
+                                    <a href="https://www.facebook.com/profile.php?id=61581381020725">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://wa.me/243859118386">
+                                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="mailto:josueedjuku98@gmail.com">
+                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex flex-col items-center gap-x-6 xl:gap-x-1 xl:flex-row">
+                            <img src="./assets/jmd/team/dany.png" alt="Dany Banani"
+                                class="size-46 rounded-full outline-1 -outline-offset-1 outline-white/10 bg-white md:size-36" />
 
-                &nbsp;
-                <div class="equipe-lien-media">
-                    <a href="https://www.facebook.com/profile.php?id=61581381020725">
-                        <i class="fa fa-facebook" aria-hidden="true" style="color: red;"></i>
-                    </a>
-                    <a href="https://wa.me/243825341894">
-                        <i class="fa fa-whatsapp" aria-hidden="true" style="color: red;"></i>
-                    </a>
-                    <a href="mailto:willmsmwamukasa@gmail.com">
-                        <i class="fa fa-envelope-o" aria-hidden="true" style="color: red;"></i>
-                    </a>
-                </div>
+                            <div class="flex flex-col items-center">
+                                <h2 class="pt-6! pb-4! text-2xl! font-semibold tracking-tight text-white md:pt-0!">Dany
+                                    BANANI
+                                </h2>
+                                <!-- <p class="pb-4! text-sm/12 text-xl! font-semibold text-indigo-300">Développeur
+                                    Informatique
+                                    de formation
+                                    de
+                                    formation
+                                </p> -->
+                                <p class="pb-4! text-sm/12 text-xl! font-semibold text-indigo-300">
+                                    Responsable Développement Web et Technologies
+                                </p>
+
+                                <div class="flex gap-6 text-white text-2xl!">
+                                    <a href="https://www.facebook.com/profile.php?id=61581381020725">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://wa.me/24382061748">
+                                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="mailto:jmdconcept3@gmail.com">
+                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex flex-col items-center gap-x-6 xl:gap-x-1 xl:flex-row">
+                            <img src="./assets/jmd/team/willy.png" alt="Willy MWAMUKASA"
+                                class="size-46 rounded-full outline-1 -outline-offset-1 outline-white/10 bg-white md:size-36" />
+
+                            <div class="flex flex-col items-center">
+                                <h2 class="pt-6! pb-4! text-2xl! font-semibold tracking-tight text-white md:pt-0!">Willy
+                                    MWAMUKASA
+                                </h2>
+                                <!--  <p class="pb-4! text-sm/12 text-xl! font-semibold text-indigo-300">Communicologue et
+                                    Marketing digitale
+                                    de
+                                    formation
+                                </p> -->
+                                <p class="pb-4! text-sm/12 text-xl! font-semibold text-indigo-300">
+                                    Responsable Communication & Image de marque
+                                </p>
+
+                                <div class="flex gap-6 text-white text-2xl!">
+                                    <a href="https://www.facebook.com/profile.php?id=61581381020725">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://wa.me/243825341894">
+                                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="mailto:willmsmwamukasa@gmail.com">
+                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
 
-        <div class="box-under">
-            <i class="fa fa-desktop" aria-hidden="true"
-                style="color: red; font-size: 50px; margin-bottom: 15px;"></i><br />
-            <p>
-                Tous reunis pour vous offrir un service de qualité <br /><br />
-                Nous utilisons les derniers technologie pour vous satisfaire
-            </p>
-        </div>
     </section>
 
     <!--Section Contact-->
-    <section id="contact">
+    <section id="contact" class="m-auto! mb-8! text-[14px]">
         <br />
-        <h1>NOS COORDONNEES</h1>
+        <h1 class="mt-18! mb-22! text-sky-500 text-center font-bold text-4xl">NOS COORDONNEES</h1>
 
-        <div class="contact-list">
+        <div class="contact-list p-2! flex flex-row justify-center gap-16">
 
-            <div class="contact-item contact-item-1">
+            <div class="contact-item contact-item-1 p-6! w-140">
 
-                <div class="item-1">
-                    <span style="text-align: center;">
-                        <i class="fa fa-map-marker" aria-hidden="true" style="font-size: 38px; color: red;"></i>
-                    </span>
-                    <p style="text-align: justify; margin: 2%;">08, Chapelle Lemba/ Righini, Kinshasa, RD Congo, Réf:
-                        École Sainte
-                        Famille</p>
+                <form action="https://formspree.io/f/xaqywvok" method="POST" id="formulaire"
+                    class="p-6! border-2 border-blue-100 rounded-xl xl:w-full lg:w-full" target="_top">
+                    <label> Votre nom :
+                        <input type="text" name="name" id="nom" required
+                            class="ml-3! px-12! py-2! font-bold border-2 border-gray-200 hover:border-blue-200 rounded-xl md:px-46! xl:px-12!">
+                    </label>
+                    <br><br>
+                    <label> Votre email :
+                        <input type="email" name="_replyto" id="email" required
+                            class="ml-2! px-12! py-2! font-bold border-2 border-gray-200 hover:border-blue-200 rounded-xl md:px-46! xl:px-12!">
+                    </label>
+                    <br><br>
+                    <label> Votre message :
+                        <textarea name="message" id="message" rows="3" required
+                            class="px-32! border-2 font-bold border-gray-200 hover:border-blue-200  rounded-xl md:px-64! xl:ml-2! xl:px-28!"></textarea>
+                    </label>
+                    <br><br>
+
+                    <!--Bloc les spams-->
+                    <input type="text" name="_gotcha" style="display:none">
+                    <button type="submit"
+                        class="py-2! px-[43%]! text-white text-[14px] font-bold bg-blue-800 border-0 rounded-xl">Envoyer</button>
+                </form>
+
+                <div class="pb-6! flex justify-center gap-8 border-b-2 border-blue-50 sm:w-full">
+                    <a href="https://www.facebook.com/profile.php?id=61581381020725"
+                        class="bg-blue-600 text-white p-2! rounded-full">
+                        <i class="fa fa-facebook" aria-hidden="true" style="font-size: 24px"></i>
+                    </a>
+                    <a href="https://www.instagram.com/invites/contact/?igsh=1ov6g05h5lnxk&utm_content=zjmjfv7"
+                        class="bg-pink-600 text-white p-2! rounded-full">
+                        <i class="fa fa-instagram" aria-hidden="true" style="font-size: 24px"></i>
+                    </a>
+                    <a href="https://wa.me/243838120851" class="bg-green-600 text-white p-2! rounded-full">
+                        <i class="fa fa-whatsapp" aria-hidden="true" style="font-size: 24px"></i>
+                    </a>
                 </div>
 
-                <div class="item-2">
-                    <div class="under-item-1">
-                        <a href="https://www.facebook.com/profile.php?id=61581381020725">
-                            <i class="fa fa-facebook" aria-hidden="true" style="font-size: 20px"></i>
-                        </a>
-                        <a href="https://www.instagram.com/invites/contact/?igsh=1ov6g05h5lnxk&utm_content=zjmjfv7">
-                            <i class="fa fa-instagram" aria-hidden="true" style="font-size: 20px"></i>
-                        </a>
-                        <a href="tel:+243838120851">
-                            <i class="fa fa-mobile" aria-hidden="true" style="font-size: 28px"></i>
-                        </a>
-                        <a href="https://wa.me/243838120851">
-                            <i class="fa fa-whatsapp" aria-hidden="true" style="font-size: 20px"></i>
-                        </a>
-                        <a href="mailto:jmdconcept3@gmail.com">
-                            <i class="fa fa-envelope-o" aria-hidden="true" style="font-size: 20px"></i>
-                        </a>
-                    </div>
-
-                    <div class="under-item-2">
-                        <a href="https://www.facebook.com/profile.php?id=61581381020725">JMD Concept</a>
-                        <a href="https://www.instagram.com/invites/contact/?igsh=1ov6g05h5lnxk&utm_content=zjmjfv7">JMD
-                            Concept</a>
-                        <a href="tel:+243838120851">(+243) 838120851</a>
-                        <a href="https://wa.me/243838120851">(+243) 838120851</a>
-                        <a href="mailto:jmdconcept3@gmail.com">jmdconcept3@gmail.com</a>
-                    </div>
-                </div>
             </div>
 
-            <div class="contact-item contact-item-last">
+            <div class="contact-item contact-item-last h-150  w-192">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.0920271207074!2d15.312747375250122!3d-4.3938767469200135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a375303531b4d%3A0x210519bf269af263!2ssainte%20famille!5e0!3m2!1sfr!2scd!4v1759545256713!5m2!1sfr!2scd"
-                    width="650" height="380" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="560" height="380" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
@@ -504,38 +610,55 @@
 
 
     <!--Footer-->
-    <footer id="footer">
-        <div id="container">
+    <footer id="footer" class="bg-sky-900">
+        <div id="container" class="bg-sky-900">
 
-            <div class="item bloc-1">
-                <img src="./assets/photos/logo-jmd.png" />
-                <br />
+            <div class="py-2! xl:py-8!">
+                <div class="text-center mb-2! grid grid-cols-1">
+                    <img src="./assets/photos/logo-jmd.png" class="m-auto! w-40" />
 
-                <a href="https://www.facebook.com/profile.php?id=61581381020725">
-                    <i class="fa fa-facebook" aria-hidden="true" style="color: white;"></i>
-                </a>
-                <a href="https://wa.me/243838120851">
-                    <i class="fa fa-whatsapp" aria-hidden="true" style="color: white"></i>
-                </a>
-                <a href="https://www.instagram.com/invites/contact/?igsh=1ov6g05h5lnxk&utm_content=zjmjfv7">
-                    <i class="fa fa-instagram" aria-hidden="true" style=" color: white;"></i>
-                </a>
+                    <p class="text-center! text-justify">
+                        <i class="fa fa-map-marker" aria-hidden="true"
+                            style="font-size: 38px; color: red; margin-right: 2%;"></i>
+                        08, Chapelle Lemba/ Righini, Kinshasa, RD
+                        Congo, <br>
+                        Réf:
+                        École Sainte
+                        Famille
+                    </p>
+                </div>
             </div>
 
-            <div class="item bloc-2">
-                <h3>Accès rapide</h3>
-                <a href="#service">Voir nos Serivices &nbsp; </a><br />
-                <a href="#blog">Voir nos Promotions &nbsp; </a><br />
-                <a href="#equipe">Voir l'équipe principal &nbsp; </i></a>
+            <div class="grid sm:w-85 gap-x-12 grid-cols-1 xl:grid-cols-2">
+                <h3 class="pb-4! border-b border-gray-50 xl:pb-2!">Accès rapide</h3>
+                <a href="#service" class="pt-6!">Nos Serivices &nbsp; </a><br />
+                <a href="#blog">Nos Promotions &nbsp; </a><br />
+                <a href="#service">Qui somme-nous &nbsp; </a><br />
+                <a href="#equipe">Notre équipe &nbsp; </i></a>
             </div>
 
-            <div class="retour-entete"><a href="#en-tete">↑</a></div>
+            <div class="mt-8! xl:mt-0!">
+                <div
+                    class="relative bottom-4 right-20 opacity-20 hover:opacity-200 animate-spin md:right-28 md:bottom-10">
+                    <a href="#en-tete" class="p-4! bg-white text-2xl text-white rounded-full">🔵</a>
+                </div>
+                <div
+                    class="relative bottom-4 -right-5 opacity-20 hover:opacity-200 animate-bounce md:right-10 md:bottom-5">
+                    <a href="#en-tete" class="p-4! bg-white text-5xl text-white rounded-full"></a>
+                </div>
+                <div
+                    class="relative bottom-4 -right-20 opacity-20 hover:opacity-200 animate-spin md:right-1 md:bottom-1">
+                    <a href="#en-tete" class="p-4! bg-white text-2xl text-white rounded-full">🔵</a>
+                </div>
+            </div>
         </div>
 
         <div class="under">
             <p class="copy item">
-                &copy; <span id="date" style="color: white;"></span>
-                JMD Concept. Tous droits réservés. <br /><br />
+                &copy; 2025 | Tous droits réservés | <span id="date" style="color: white;">
+                    <br />
+                    JMD Concept, l'innovation au service de votre visibilité.
+                </span>
                 <!-- <span class="version-footer"
                     style="color: rgb(199, 198, 198); text-align: center; font-size: 10px; margin: 2%;"></span> -->
             </p>

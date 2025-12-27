@@ -8,3 +8,4 @@ Stratégique.
 # jmd-portfolio
 Portfolio de jmd-concept
 >>>>>>> 83c40b42fa3f073afed9726c3da76461b8087015
+ 

@@ -1,5 +1,5 @@
 /* Medium <= 992px */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 996px) {
     .navbar {
         padding: 0;
         margin: 0;
@@ -12,7 +12,7 @@
     }*/
 
     .logo {
-        top: 16px;
+        top: 14px;
         left: 35px;
         width: 80px;
         height: 50px;
@@ -21,16 +21,14 @@
     .nav-list {
         position: fixed;
         margin: 0;
-        padding: 0;
+        padding-top: 14%;
         top: 0;
         right: 0;
         width: 280px;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
+        display: grid;
         list-style: none;
-        background-color: rgb(3, 149, 207);
+        /* background-color: rgb(1, 134, 186); */
         backdrop-filter: blur(250px);
 
         /* On cache le navbar hors l'écran par défaut */
@@ -46,13 +44,13 @@
     }
 
     .navbar .menu {
-        top: 24px;
+        top: 20px;
         display: block;
         z-index: 1100;
     }
 
     .nav-list li {
-        padding: 20px;
+        padding: 2px;
     }
 
     .nav-list li a {
@@ -60,29 +58,36 @@
         font-size: 18px;
         margin-top: 0.5em;
         margin-left: 2em;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.082);
+    }
+
+    .nav-list li a:hover {
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.082);
+        transition: transform 0.5s ease-in;
     }
 
     .lien-media {
         margin: auto;
         padding: 0;
-        margin: 0;
         display: flex;
+        gap: 26px;
         flex-direction: row;
         justify-content: center;
-        margin-top: 25%;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-        width: 80%;
+        margin-top: 45%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.164);
+        width: 32%;
     }
 
     .nav-list .lien-media a {
         padding: 0px;
         margin: 10px;
-        font-size: 16px;
-        margin-top: 2em;
+        font-size: 18px;
+        margin-top: 1em;
     }
 
     .lien-media .version {
-        margin-top: 28%;
+        margin-top: 2%;
     }
 
     .navbar.scroller {
@@ -99,8 +104,8 @@
     .navbar.scroller .nav-list .lien-media a {
         padding: 0px;
         margin: 10px;
-        font-size: 16px;
-        margin-top: 2em;
+        font-size: 18px;
+        margin-top: 1em;
     }
 
     /*Home*/
@@ -143,7 +148,7 @@
         padding: 0;
         margin: 0;
         height: 100%;
-        margin-bottom: 5em;
+        padding-bottom: 4%;
     }
 
     .service-item {
@@ -164,6 +169,7 @@
         padding: 0;
         margin: 0;
         border-bottom: 5%;
+        padding-bottom: 4%;
     }
 
     #blog h1 {
@@ -195,50 +201,12 @@
         padding: 18px;
     }
 
-    /* Equipe */
-    #equipe {
-        padding: 0;
-        margin: 0;
-        border-bottom: 5%;
-    }
-
-    .equipe-container {
-        gap: 50px;
-    }
-
-    .equipe-item {
-        width: 30%;
-        margin: 0.1%;
-        flex-grow: 1;
-        justify-content: center;
-    }
-
-    .equipe-item img {
-        width: 180px;
-        height: 180px;
-    }
-
-    .equipe-item .identite {
-        margin: 12%;
-    }
-
-    .equipe-item .equipe-lien-media a {
-        text-decoration: none;
-        color: rgb(27, 13, 4);
-        margin: 2%;
-        font-size: 20px;
-    }
-
-    #equipe .box-under {
-        width: 45%;
-    }
-
     /* Contact */
     #contact {
         height: 100%;
         padding: 0;
         margin: 2%;
-        margin-bottom: 1%;
+        padding-bottom: 1%;
     }
 
     .contact-list {
@@ -276,7 +244,7 @@
 
     .contact-item iframe {
         width: 100%;
-        height: 100%;
+        height: 400px;
     }
 
     /* Footer */
@@ -301,6 +269,25 @@
 
 /* Small <= 768px */
 @media screen and (max-width: 768px) {
+
+    .item-btn {
+        margin: 2%;
+        width: 180px;
+        font-size: 13px;
+        flex-direction: column;
+    }
+
+    #home .item img {
+        margin-top: 12%;
+        width: 200px;
+        height: 190px;
+    }
+
+    /*Service*/
+    .service-item {
+        width: 88%;
+    }
+
     /* Blog */
     #blog .gallery {
         flex-direction: column;
@@ -309,12 +296,12 @@
     }
 
     .gallery .gallery-item {
-        width: 88%;
+        width: 80%;
         height: auto;
     }
 
     .gallery-item img {
-        height: 75%;
+        height: 70%;
     }
 
     /* Equipe */
@@ -324,35 +311,12 @@
         align-items: center;
     }
 
-    .equipe-item {
-        width: 80%;
-    }
-
-    .equipe-item img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .equipe-item .identite {
-        text-align: center;
-        margin: 1px;
-    }
-
-    #equipe .box-under {
-        width: 88%;
-        margin-top: 18%;
-    }
-
-    .box-under p {
-        text-align: center;
-    }
-
     /* Contact */
     #contact {
         height: 100%;
         padding: 0;
         margin: 10;
-        margin-bottom: 1%;
+        padding-bottom: 2%;
     }
 
     .contact-list {
@@ -418,6 +382,7 @@
 
 /* Extra Small <= 576px */
 @media screen and (max-width: 576px) {
+
     /*Home*/
     #home .item h1 {
         margin: 15% 0% 2%;
@@ -429,14 +394,16 @@
     }
 
     #home .item img {
+        margin-top: 8%;
         width: 180px;
         height: 180px;
     }
 
-    .item .btn {
-        margin: 4px;
+    .item-btn {
+        margin: 2%;
         width: 180px;
         font-size: 13px;
+        flex-direction: column;
     }
 
     /* Contact */
@@ -514,11 +481,11 @@
 
 
 @media screen and (orientation: landscape) and (max-width: 920px) {
-     .navbar {
+    .navbar {
         height: 12%;
     }
 
-     .logo {
+    .logo {
         top: 4px;
         width: 65px;
         height: 45px;

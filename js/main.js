@@ -1,10 +1,27 @@
 
+const formulaire = document.getElementById('formulaire');
+const nom = document.getElementById('nom');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+
+// Version 1 : Réinitialisation après soumission
+formulaire.addEventListener('submit', function (e) {
+  // Le formulaire sera envoyé normalement à Formspree
+  // Après l'envoi, on peut réinitialiser les champs
+  setTimeout(() => {
+    nom.value = "";
+    email.value = "";
+    message.value = "";
+  }, 100);
+});
+
+
 // Settings
 document.addEventListener("DOMContentLoaded", () => {
 
   // Affiche la version
-  document.querySelector(".version").textContent = "v0.1.3";
-  document.querySelector(".version-footer").textContent = "v0.1.3";
+  document.querySelector(".version").textContent = "v0.1.4";
+  document.querySelector(".version-footer").textContent = "v0.1.4";
 
   // Affiche automatiquement l'année courante
   document.getElementById("date").textContent = new Date().getFullYear();
