@@ -20,8 +20,8 @@ formulaire.addEventListener('submit', function (e) {
 document.addEventListener("DOMContentLoaded", () => {
 
   // Affiche la version
-  document.querySelector(".version").textContent = "v0.1.4";
-  document.querySelector(".version-footer").textContent = "v0.1.4";
+  document.querySelector(".version").textContent = "v0.2.0";
+  document.querySelector(".version-footer").textContent = "v0.2.0";
 
   // Affiche automatiquement l'année courante
   document.getElementById("date").textContent = new Date().getFullYear();
